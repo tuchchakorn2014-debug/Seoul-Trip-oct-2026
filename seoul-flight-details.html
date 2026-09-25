@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Seoul trip flight ticket details">
+<title>Flight details · Seoul 15–20 Oct 2026</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;700&family=Noto+Serif+Thai:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&display=swap">
+<style>
+:root{
+  --bg:#f2f5fa; --surface:#ffffff; --ink:#0f1f42; --muted:#5a6784; --line:#d9e1ee;
+  --accent:#0052a4; --accent-ink:#ffffff; --gold:#f3c623; --gold-ink:#2b2200;
+  --l1:#4a5b82; --l2:#00873f; --l3:#d9650a; --l4:#8250a0; --l5:#0052a4; --l6:#c62a3a; --on-line:#ffffff;
+  --hero-a:#0f1f42; --hero-b:#173a78; --hero-ink:#ffffff; --air:#e8622c;
+  box-sizing:border-box;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0b1326; --surface:#16213b; --ink:#eaf0fa; --muted:#9bacc8; --line:#2a3959;
+    --accent:#6fb0ff; --accent-ink:#06213f; --gold:#f3c623; --gold-ink:#2b2200;
+    --l1:#93a6d2; --l2:#3ecf7f; --l3:#ff9a45; --l4:#c9a0e6; --l5:#66a8ff; --l6:#ff7a88; --on-line:#0b1326;
+    --hero-a:#101c3a; --hero-b:#1a3468; --air:#ff8a5b;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0b1326; --surface:#16213b; --ink:#eaf0fa; --muted:#9bacc8; --line:#2a3959;
+  --accent:#6fb0ff; --accent-ink:#06213f; --gold:#f3c623; --gold-ink:#2b2200;
+  --l1:#93a6d2; --l2:#3ecf7f; --l3:#ff9a45; --l4:#c9a0e6; --l5:#66a8ff; --l6:#ff7a88; --on-line:#0b1326;
+  --hero-a:#101c3a; --hero-b:#1a3468; --air:#ff8a5b;
+}
+html{scroll-padding-top:76px;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+*{box-sizing:border-box}
+html,body{overflow-x:hidden}
+body{overflow-wrap:break-word;word-break:break-word}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans Thai","Noto Sans KR",system-ui,sans-serif;line-height:1.65;font-size:16px;max-width:440px;width:100%;margin-left:auto;margin-right:auto;padding-bottom:env(safe-area-inset-bottom,0px)}
+html[lang="en"] body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+h1,h2,h3{font-family:"Noto Serif Thai","Noto Sans KR",Georgia,serif;margin:0;line-height:1.25}
+html[lang="en"] h1,html[lang="en"] h2,html[lang="en"] h3,html[lang="en"] .code{font-family:Georgia,"Times New Roman",serif}
+html[lang="ko"] h1,html[lang="ko"] h2,html[lang="ko"] h3{font-family:"Noto Sans KR",sans-serif;font-weight:900}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.wrap{width:100%;padding:0 14px}
+
+.bar{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:8px;padding-bottom:8px;flex-wrap:wrap}
+.langs{display:flex;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:3px}
+.langs button{font:inherit;font-size:.9rem;font-weight:700;padding:4px 12px;border-radius:999px;border:0;background:transparent;color:var(--muted);cursor:pointer}
+.langs button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.navmenu{position:relative;flex:none}
+.navdrop{position:absolute;top:calc(100% + 8px);right:0;background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:0 12px 32px rgba(9,20,50,.2);padding:6px;display:flex;flex-direction:column;gap:2px;min-width:210px;z-index:50;opacity:0;pointer-events:none;transform:translateY(-6px);transition:opacity .15s ease, transform .15s ease}
+.navdrop.open{opacity:1;pointer-events:auto;transform:translateY(0)}
+.navdrop-item{display:flex;align-items:center;gap:10px;padding:11px 12px;border-radius:10px;text-decoration:none;color:var(--ink);font-weight:600;font-size:.95rem}
+.navdrop-item:hover,.navdrop-item:focus-visible{background:var(--bg)}
+.navdrop-item .ic{font-size:1.15rem;flex:none}
+.lbl{display:inline}
+
+.btn{display:inline-flex;align-items:center;gap:6px;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:700;padding:7px 14px;border-radius:999px;font-size:.9rem;white-space:nowrap;border:1.5px solid var(--accent)}
+.btn.ghost{background:transparent;color:var(--accent)}
+
+.hero{background:linear-gradient(160deg,var(--hero-a),var(--hero-b));color:var(--hero-ink);position:relative;overflow:hidden}
+.hero .wrap{padding-top:36px;padding-bottom:88px;position:relative}
+.hero .ghost-kr{position:absolute;right:-6px;top:-8px;font-family:"Noto Sans KR",sans-serif;font-weight:900;font-size:6.5rem;line-height:1;color:rgba(255,255,255,.07);pointer-events:none;user-select:none}
+.eyebrow{display:inline-flex;gap:8px;align-items:center;background:var(--gold);color:var(--gold-ink);font-weight:700;padding:4px 14px;border-radius:999px;font-size:.92rem}
+.hero h1{font-size:2.3rem;font-weight:800;margin:16px 0 8px;letter-spacing:-.01em}
+.hero p{margin:0;max-width:44ch;opacity:.85;font-size:1.02rem}
+.hero-links{display:flex;gap:10px;margin-top:20px;flex-wrap:wrap}
+.hero-links .btn{background:var(--gold);border-color:var(--gold);color:var(--gold-ink)}
+.hero-links .btn.ghost{background:transparent;border-color:rgba(255,255,255,.5);color:#fff}
+
+h2.sec{font-size:1.4rem;margin:38px 0 4px}
+.sub{color:var(--muted);margin:-2px 0 18px;max-width:60ch}
+
+.flights{margin-top:-56px;display:flex;flex-direction:column;gap:18px;position:relative}
+.pass{background:var(--surface);border-radius:18px;box-shadow:0 10px 30px rgba(9,20,50,.16);overflow:hidden}
+.pass-head{padding:14px 18px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;background:var(--air);color:#fff}
+.pass-head .dir{font-weight:800;font-size:1.02rem}
+.pass-head .fdate{font-size:.92rem;opacity:.92}
+.airline-row{display:flex;align-items:center;gap:8px;padding:14px 18px 4px;flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.airline-row::-webkit-scrollbar{display:none}
+.airline-dot{flex:none;width:10px;height:10px;border-radius:50%;background:var(--air)}
+.airline-head{display:flex;align-items:baseline;gap:8px;flex:none;white-space:nowrap}
+.airline-name{font-weight:800;font-size:1.08rem;white-space:nowrap}
+.flight-no{color:var(--muted);font-weight:700;font-size:.92rem;white-space:nowrap}
+.cabin{flex:none;margin-left:6px;font-size:.78rem;font-weight:700;color:var(--muted);border:1px solid var(--line);padding:2px 10px;border-radius:999px;white-space:nowrap}
+.refs{padding:8px 18px 14px;display:flex;align-items:center;gap:8px;flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.refs::-webkit-scrollbar{display:none}
+.reflabel{flex:none;font-size:.85rem;color:var(--muted);white-space:nowrap}
+.refchips{display:flex;gap:6px;flex-wrap:nowrap;flex:none}
+.refchip{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;font-weight:700;font-size:.85rem;color:var(--ink);background:var(--bg);border:1px solid var(--line);padding:3px 10px;border-radius:8px;letter-spacing:.03em;white-space:nowrap;flex:none}
+.route-row{display:flex;align-items:center;gap:10px;padding:6px 18px 16px;flex-wrap:wrap;justify-content:center}
+.code{font-family:"Noto Serif Thai",Georgia,serif;font-size:2.1rem;font-weight:800;line-height:1}
+.time{font-weight:700;font-size:1.05rem}
+.city{color:var(--muted);font-size:.82rem;line-height:1.3}
+.gap{flex:1;text-align:center;color:var(--muted);font-size:.72rem;line-height:1.2;min-width:60px}
+.gap .plane{font-size:1.1rem}
+.gap .dash{height:2px;background:repeating-linear-gradient(90deg,var(--muted) 0 5px,transparent 5px 10px);margin:2px 0 5px}
+.rt{text-align:right}
+.perf{border-top:2px dashed var(--line);margin:0 12px;position:relative}
+.perf::before,.perf::after{content:"";position:absolute;top:-12px;width:22px;height:22px;border-radius:50%;background:var(--bg)}
+.perf::before{left:-23px}.perf::after{right:-23px}
+.pass-foot{padding:12px 18px 16px;display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.pass-foot .small{flex:1 1 140px}
+.small{color:var(--muted);font-size:.88rem;line-height:1.45}
+
+.note{background:var(--surface);border-radius:14px;padding:14px 18px;margin:26px 0}
+.note ul{margin:6px 0 0;padding-left:20px;color:var(--muted);font-size:.93rem}
+.note li{margin:0 0 8px}
+.navmenu .btn{min-width:44px;min-height:44px}
+.navdrop-item{min-height:44px}
+footer{margin:32px 0 48px;color:var(--muted);font-size:.85rem;padding-bottom:env(safe-area-inset-bottom,0px)}
+
+@media (max-width:380px){
+  .wrap{padding:0 12px}
+  .hero h1{font-size:1.85rem}
+  .hero .ghost-kr{font-size:4.6rem}
+  .code{font-size:1.7rem}
+  .time{font-size:.95rem}
+  .airline-name{font-size:1rem}
+}
+@media (max-width:340px){
+  .hero h1{font-size:1.65rem}
+  .code{font-size:1.5rem}
+  .btn{font-size:.82rem;padding:6px 11px}
+}
+</style>
+</head>
+<body>
+<div class="bar"><div class="wrap">
+  <div class="langs" role="group" aria-label="Language">
+    <button data-l="th">ไทย</button><button data-l="en">EN</button><button data-l="ko">한국어</button>
+  </div>
+  <div class="navmenu">
+    <button class="btn ghost" id="navToggle" aria-haspopup="true" aria-expanded="false" aria-label="More pages" type="button">🔗</button>
+    <div class="navdrop" id="navDrop" role="menu">
+      <a class="navdrop-item" id="tripTopBtn" target="_blank" rel="noopener" role="menuitem"><span class="ic">🍁</span><span class="lbl">Trip</span></a>
+      <a class="navdrop-item" id="clTopBtn" target="_blank" rel="noopener" role="menuitem"><span class="ic">🎒</span><span class="lbl">Checklist</span></a>
+      <a class="navdrop-item" id="travTopBtn" target="_blank" rel="noopener" role="menuitem"><span class="ic">👥</span><span class="lbl">Travelers</span></a>
+    </div>
+  </div>
+</div></div>
+<div id="app"></div>
+
+<script>
+function L(th,en,ko){ return {th:th,en:en,ko:ko}; }
+var TRIP_URL = "index.html";
+var CHECKLIST_URL = "seoul-checklist.html";
+var TRAVELERS_URL = "seoul-travelers.html";
+var AIRLINE_URL = "https://www.airpremia.com/a/booking/find-trip";
+
+var UI = {
+ th:{ title:"รายละเอียดเที่ยวบิน", sub:"ข้อมูลตั๋วเครื่องบินทั้งขาไปและขากลับ สายการบิน Air Premia",
+  tripBtn:"หน้าแผนเที่ยว", clBtn:"เช็กลิสต์เตรียมตัว", travBtn:"สมาชิกผู้เดินทาง", airlineBtn:"จัดการการจองที่ Air Premia",
+  outbound:"ขาไป", inbound:"ขากลับ", cabin:"ECONOMY", refLabel:"เลขอ้างอิง", duration:"ระยะเวลาบิน",
+  gate:"ตม./เช็กอินที่เทอร์มินัล 1", noteTitle:"หมายเหตุ",
+  notes:[
+   "เที่ยวบินขาไปมีหมายเลขอ้างอิง 2 ชุด (IBE36X และ U43NUV) ซึ่งมักหมายถึงมีการแบ่งกลุ่มผู้โดยสาร 5 คนออกเป็น 2 การจองย่อยภายใต้เที่ยวบินเดียวกัน ควรเช็กกับตัวแทนจำหน่ายตั๋วว่าใครอยู่กลุ่มไหน และพกทั้ง 2 เลขไว้ตอนเช็กอิน",
+   "เที่ยวบินขากลับมีหมายเลขอ้างอิงชุดเดียว (UDNQ5E) ครอบคลุมผู้โดยสารทั้งหมด",
+   "ทั้งสองเที่ยวบินขึ้น-ลงที่เทอร์มินัล 1 ของสนามบินอินชอน และสนามบินสุวรรณภูมิฝั่งกรุงเทพฯ",
+   "เครื่องบินที่ใช้คือ Boeing 787-9 ที่นั่งชั้นประหยัด (Economy) เป็นข้อมูลจากระบบติดตามเที่ยวบินสาธารณะ ควรตรวจกับอีเมลยืนยันตั๋วจริงอีกครั้ง เวลาบินอาจคลาดเคลื่อนเล็กน้อยในแต่ละวัน"
+  ]},
+ en:{ title:"Flight details", sub:"Outbound and return ticket details, flying Air Premia",
+  tripBtn:"Trip plan", clBtn:"Packing checklist", travBtn:"Travelers", airlineBtn:"Manage booking at Air Premia",
+  outbound:"Outbound", inbound:"Return", cabin:"ECONOMY", refLabel:"Ref no.", duration:"Flight duration",
+  gate:"Immigration/check-in at Terminal 1", noteTitle:"Notes",
+  notes:[
+   "The outbound flight has two reference numbers (IBE36X and U43NUV), which usually means the 5 travelers are split into 2 sub-bookings on the same flight. Confirm with your travel agent who is under which reference, and carry both codes for check-in.",
+   "The return flight has a single reference number (UDNQ5E) covering all travelers.",
+   "Both flights use Terminal 1 at Incheon Airport and Suvarnabhumi Airport in Bangkok.",
+   "The aircraft is a Boeing 787-9, Economy cabin, based on public flight-tracking data. Reconfirm against your actual ticket confirmation email, as scheduled times can shift slightly day to day."
+  ]},
+ ko:{ title:"항공편 상세정보", sub:"에어프레미아 왕복 항공권 상세 정보입니다",
+  tripBtn:"여행 일정", clBtn:"준비물 체크리스트", travBtn:"여행 인원", airlineBtn:"에어프레미아에서 예약 관리",
+  outbound:"출국", inbound:"귀국", cabin:"이코노미", refLabel:"참조번호", duration:"비행 시간",
+  gate:"제1터미널 출입국·체크인", noteTitle:"참고",
+  notes:[
+   "출국편은 참조번호가 2개(IBE36X, U43NUV)입니다. 보통 5명이 같은 항공편 안에서 두 건의 예약으로 나뉘어 있다는 의미이니, 누가 어느 예약에 속하는지 여행사에 확인하고 체크인 시 두 번호를 모두 지참하세요.",
+   "귀국편은 참조번호가 UDNQ5E 하나로 전원을 포함합니다.",
+   "두 항공편 모두 인천공항 제1터미널과 방콕 수완나품 공항을 이용합니다.",
+   "기종은 보잉 787-9, 이코노미 좌석이며 공개 항공편 추적 데이터를 기준으로 했습니다. 실제 발권 확인 메일과 다시 대조하세요. 예정 시각은 날마다 조금씩 달라질 수 있습니다."
+  ]}
+};
+
+var FLIGHTS = [
+ {dir:"out", date:L("พฤ. 15 ต.ค. 2026","Thu 15 Oct 2026","2026.10.15 (목)"),
+  no:"YP 602", refs:["IBE36X","U43NUV"],
+  from:{code:"BKK", city:L("กรุงเทพฯ · สนามบินสุวรรณภูมิ","Bangkok · Suvarnabhumi Airport","방콕 · 수완나품 공항"), time:"22:45"},
+  to:{code:"ICN", city:L("โซล · สนามบินนานาชาติอินชอน T1","Seoul · Incheon Int'l Airport T1","서울 · 인천국제공항 T1"), time:"06:15"},
+  arrNote:L("ถึงวันที่ 16 ต.ค.","Arrives 16 Oct","10/16 도착"), dur:"5h 30m"},
+ {dir:"in", date:L("อ. 20 ต.ค. 2026","Tue 20 Oct 2026","2026.10.20 (화)"),
+  no:"YP 601", refs:["UDNQ5E"],
+  from:{code:"ICN", city:L("โซล · สนามบินนานาชาติอินชอน T1","Seoul · Incheon Int'l Airport T1","서울 · 인천국제공항 T1"), time:"17:15"},
+  to:{code:"BKK", city:L("กรุงเทพฯ · สนามบินสุวรรณภูมิ","Bangkok · Suvarnabhumi Airport","방콕 · 수완나품 공항"), time:"21:10"},
+  arrNote:L("ถึงวันเดียวกัน","Same day","당일 도착"), dur:"5h 55m"}
+];
+
+function el(tag, cls, text){ var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+function btn(href, text, ghost){ var a = el("a","btn"+(ghost?" ghost":"")); a.href = href; a.target = "_blank"; a.rel = "noopener"; a.textContent = text; return a; }
+
+var lang = "th";
+try { var s = localStorage.getItem("seoul-lang"); if (s) lang = s; else { var n = (navigator.language||"th").slice(0,2); if (n==="ko"||n==="en") lang = n; } } catch(e) {}
+
+function flightCard(u, f){
+  var p = el("div","pass");
+  var head = el("div","pass-head");
+  head.appendChild(el("span","dir", (f.dir==="out"?u.outbound:u.inbound)));
+  head.appendChild(el("span","fdate", f.date[lang]));
+  p.appendChild(head);
+
+  var ar = el("div","airline-row");
+  ar.appendChild(el("span","airline-dot"));
+  var ahead = el("div","airline-head");
+  ahead.appendChild(el("span","airline-name","Air Premia"));
+  ahead.appendChild(el("span","flight-no", f.no));
+  ar.appendChild(ahead);
+  ar.appendChild(el("span","cabin", u.cabin));
+  p.appendChild(ar);
+
+  var rf = el("div","refs");
+  rf.appendChild(el("span","reflabel", u.refLabel));
+  var chipWrap = el("span","refchips");
+  f.refs.forEach(function(r){ chipWrap.appendChild(el("span","refchip", r)); });
+  rf.appendChild(chipWrap);
+  p.appendChild(rf);
+
+  function side(code,time,cityText,right){ var d = el("div", right?"rt":""); d.appendChild(el("div","code",code)); d.appendChild(el("div","time",time)); d.appendChild(el("div","city",cityText)); return d; }
+  var rr = el("div","route-row");
+  rr.appendChild(side(f.from.code, f.from.time, f.from.city[lang], false));
+  var g = el("div","gap"); g.appendChild(el("div","plane","✈")); g.appendChild(el("div","dash")); g.appendChild(document.createTextNode(f.dur + " · " + f.arrNote[lang])); rr.appendChild(g);
+  rr.appendChild(side(f.to.code, f.to.time, f.to.city[lang], true));
+  p.appendChild(rr); p.appendChild(el("div","perf"));
+
+  var foot = el("div","pass-foot");
+  foot.appendChild(el("span","small", u.gate));
+  foot.appendChild(btn(AIRLINE_URL, u.airlineBtn, true));
+  p.appendChild(foot);
+
+  return p;
+}
+
+function render(){
+  var u = UI[lang], app = document.getElementById("app");
+  document.documentElement.lang = lang;
+  document.title = u.title + " · Seoul";
+  app.textContent = "";
+  document.querySelectorAll(".langs button").forEach(function(b){ b.setAttribute("aria-pressed", b.getAttribute("data-l")===lang ? "true":"false"); });
+  var tb = document.getElementById("tripTopBtn"); tb.href = TRIP_URL; tb.querySelector(".lbl").textContent = u.tripBtn;
+  var cb = document.getElementById("clTopBtn"); cb.href = CHECKLIST_URL; cb.querySelector(".lbl").textContent = u.clBtn;
+  var trb = document.getElementById("travTopBtn"); trb.href = TRAVELERS_URL; trb.querySelector(".lbl").textContent = u.travBtn;
+
+  var hero = el("header","hero"); var gh = el("div","ghost-kr","항공"); gh.setAttribute("aria-hidden","true"); hero.appendChild(gh);
+  var hw = el("div","wrap"); hero.appendChild(hw);
+  hw.appendChild(el("span","eyebrow","✈️ Air Premia · 15–20 Oct 2026"));
+  hw.appendChild(el("h1",null,u.title));
+  hw.appendChild(el("p",null,u.sub));
+  var hl = el("div","hero-links");
+  var a1 = el("a","btn"); a1.href = TRIP_URL; a1.target="_blank"; a1.rel="noopener"; a1.textContent = ""; a1.title = u.tripBtn; a1.appendChild(document.createTextNode("🍁 ")); a1.appendChild(el("span","lbl",u.tripBtn)); hl.appendChild(a1);
+  var a2 = el("a","btn ghost"); a2.href = AIRLINE_URL; a2.target="_blank"; a2.rel="noopener"; a2.textContent = ""; a2.title = u.airlineBtn; a2.appendChild(document.createTextNode("✈️ ")); a2.appendChild(el("span","lbl",u.airlineBtn)); hl.appendChild(a2);
+  hw.appendChild(hl);
+  app.appendChild(hero);
+
+  var body = el("div","wrap"); app.appendChild(body);
+  var fl = el("section","flights");
+  FLIGHTS.forEach(function(f){ fl.appendChild(flightCard(u, f)); });
+  body.appendChild(fl);
+
+  var nt = el("div","note"); nt.appendChild(el("b",null,u.noteTitle));
+  var ul = el("ul"); u.notes.forEach(function(t){ ul.appendChild(el("li",null,t)); }); nt.appendChild(ul); body.appendChild(nt);
+  body.appendChild(el("footer",null,""));
+}
+
+document.querySelectorAll(".langs button").forEach(function(b){
+  b.addEventListener("click", function(){
+    lang = b.getAttribute("data-l");
+    try { localStorage.setItem("seoul-lang", lang); } catch(e) {}
+    render();
+  });
+});
+
+var navToggle = document.getElementById("navToggle");
+var navDrop = document.getElementById("navDrop");
+function closeNavDrop(){ navDrop.classList.remove("open"); navToggle.setAttribute("aria-expanded","false"); }
+function openNavDrop(){ navDrop.classList.add("open"); navToggle.setAttribute("aria-expanded","true"); }
+navToggle.addEventListener("click", function(e){
+  e.stopPropagation();
+  if (navDrop.classList.contains("open")) closeNavDrop(); else openNavDrop();
+});
+navDrop.addEventListener("click", function(e){ e.stopPropagation(); });
+document.querySelectorAll(".navdrop-item").forEach(function(a){ a.addEventListener("click", closeNavDrop); });
+document.addEventListener("click", closeNavDrop);
+document.addEventListener("keydown", function(e){ if (e.key === "Escape") closeNavDrop(); });
+
+render();
+</script>
+</body>
+</html>

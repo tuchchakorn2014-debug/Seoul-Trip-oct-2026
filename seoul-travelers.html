@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Seoul trip travelers">
+<title>Travelers · Seoul 15–20 Oct 2026</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;700&family=Noto+Serif+Thai:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&display=swap">
+<style>
+:root{
+  --bg:#f2f5fa; --surface:#ffffff; --ink:#0f1f42; --muted:#5a6784; --line:#d9e1ee;
+  --accent:#0052a4; --accent-ink:#ffffff; --gold:#f3c623; --gold-ink:#2b2200;
+  --l1:#4a5b82; --l2:#00873f; --l3:#d9650a; --l4:#8250a0; --l5:#0052a4; --l6:#c62a3a; --on-line:#ffffff;
+  --hero-a:#0f1f42; --hero-b:#173a78; --hero-ink:#ffffff;
+  box-sizing:border-box;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0b1326; --surface:#16213b; --ink:#eaf0fa; --muted:#9bacc8; --line:#2a3959;
+    --accent:#6fb0ff; --accent-ink:#06213f; --gold:#f3c623; --gold-ink:#2b2200;
+    --l1:#93a6d2; --l2:#3ecf7f; --l3:#ff9a45; --l4:#c9a0e6; --l5:#66a8ff; --l6:#ff7a88; --on-line:#0b1326;
+    --hero-a:#101c3a; --hero-b:#1a3468;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0b1326; --surface:#16213b; --ink:#eaf0fa; --muted:#9bacc8; --line:#2a3959;
+  --accent:#6fb0ff; --accent-ink:#06213f; --gold:#f3c623; --gold-ink:#2b2200;
+  --l1:#93a6d2; --l2:#3ecf7f; --l3:#ff9a45; --l4:#c9a0e6; --l5:#66a8ff; --l6:#ff7a88; --on-line:#0b1326;
+  --hero-a:#101c3a; --hero-b:#1a3468;
+}
+html{scroll-padding-top:76px;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+*{box-sizing:border-box}
+html,body{overflow-x:hidden}
+body{overflow-wrap:break-word;word-break:break-word}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans Thai","Noto Sans KR",system-ui,sans-serif;line-height:1.65;font-size:16px;max-width:440px;width:100%;margin-left:auto;margin-right:auto;padding-bottom:env(safe-area-inset-bottom,0px)}
+html[lang="en"] body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+h1,h2,h3{font-family:"Noto Serif Thai","Noto Sans KR",Georgia,serif;margin:0;line-height:1.25}
+html[lang="en"] h1,html[lang="en"] h2,html[lang="en"] h3{font-family:Georgia,"Times New Roman",serif}
+html[lang="ko"] h1,html[lang="ko"] h2,html[lang="ko"] h3{font-family:"Noto Sans KR",sans-serif;font-weight:900}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.wrap{width:100%;padding:0 14px}
+
+.bar{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:8px;padding-bottom:8px;flex-wrap:wrap}
+.langs{display:flex;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:3px}
+.langs button{font:inherit;font-size:.9rem;font-weight:700;padding:4px 12px;border-radius:999px;border:0;background:transparent;color:var(--muted);cursor:pointer}
+.langs button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.navmenu{position:relative;flex:none}
+.navdrop{position:absolute;top:calc(100% + 8px);right:0;background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:0 12px 32px rgba(9,20,50,.2);padding:6px;display:flex;flex-direction:column;gap:2px;min-width:210px;z-index:50;opacity:0;pointer-events:none;transform:translateY(-6px);transition:opacity .15s ease, transform .15s ease}
+.navdrop.open{opacity:1;pointer-events:auto;transform:translateY(0)}
+.navdrop-item{display:flex;align-items:center;gap:10px;padding:11px 12px;border-radius:10px;text-decoration:none;color:var(--ink);font-weight:600;font-size:.95rem}
+.navdrop-item:hover,.navdrop-item:focus-visible{background:var(--bg)}
+.navdrop-item .ic{font-size:1.15rem;flex:none}
+.lbl{display:inline}
+
+.btn{display:inline-flex;align-items:center;gap:6px;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:700;padding:7px 14px;border-radius:999px;font-size:.9rem;white-space:nowrap;border:1.5px solid var(--accent)}
+.btn.ghost{background:transparent;color:var(--accent)}
+
+.hero{background:linear-gradient(160deg,var(--hero-a),var(--hero-b));color:var(--hero-ink);position:relative;overflow:hidden}
+.hero .wrap{padding-top:36px;padding-bottom:40px;position:relative}
+.hero .ghost-kr{position:absolute;right:-6px;top:-8px;font-family:"Noto Sans KR",sans-serif;font-weight:900;font-size:6.5rem;line-height:1;color:rgba(255,255,255,.07);pointer-events:none;user-select:none}
+.eyebrow{display:inline-flex;gap:8px;align-items:center;background:var(--gold);color:var(--gold-ink);font-weight:700;padding:4px 14px;border-radius:999px;font-size:.92rem}
+.hero h1{font-size:2.3rem;font-weight:800;margin:16px 0 8px;letter-spacing:-.01em}
+.hero p{margin:0;max-width:44ch;opacity:.85;font-size:1.02rem}
+.hero-links{display:flex;gap:10px;margin-top:20px;flex-wrap:wrap}
+.hero-links .btn{background:var(--gold);border-color:var(--gold);color:var(--gold-ink)}
+.hero-links .btn.ghost{background:transparent;border-color:rgba(255,255,255,.5);color:#fff}
+
+h2.sec{font-size:1.4rem;margin:38px 0 4px}
+.sub{color:var(--muted);margin:-2px 0 18px;max-width:60ch}
+
+.cards{display:grid;grid-template-columns:1fr;gap:14px}
+.card{background:var(--surface);border-radius:16px;box-shadow:0 4px 18px rgba(9,20,50,.07);display:flex;gap:16px;padding:18px;align-items:flex-start;border-left:6px solid var(--c)}
+.avatar{flex:none;width:56px;height:56px;border-radius:50%;background:var(--c);color:var(--on-line);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.15rem;font-family:"Noto Serif Thai",Georgia,serif}
+.cinfo{flex:1;min-width:0}
+.cname{font-weight:800;font-size:1.12rem;overflow-wrap:anywhere}
+.crole{display:inline-block;margin-top:4px;font-size:.82rem;font-weight:700;padding:2px 10px;border-radius:999px;background:color-mix(in srgb, var(--c) 16%, transparent);color:var(--c)}
+.cmeta{display:grid;grid-template-columns:1fr;gap:9px;margin-top:12px;font-size:.95rem}
+.cmeta dt{color:var(--muted);font-size:.78rem;font-weight:700}
+.cmeta dd{margin:2px 0 0}
+.cmeta dd.mono{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;letter-spacing:.03em;font-weight:700;overflow-wrap:anywhere}
+.validtag{display:inline-block;margin-left:6px;font-size:.76rem;font-weight:700;color:var(--l2);background:color-mix(in srgb, var(--l2) 14%, transparent);padding:1px 8px;border-radius:999px;white-space:nowrap}
+.cnum{flex:none;width:30px;height:30px;border-radius:8px;background:var(--bg);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.85rem;color:var(--muted)}
+.card-top{display:flex;gap:10px;align-items:center}
+
+.note{background:var(--surface);border-radius:14px;padding:14px 18px;margin:26px 0}
+.note ul{margin:6px 0 0;padding-left:20px;color:var(--muted);font-size:.93rem}
+.navmenu .btn{min-width:44px;min-height:44px}
+.navdrop-item{min-height:44px}
+footer{margin:32px 0 48px;color:var(--muted);font-size:.85rem;padding-bottom:env(safe-area-inset-bottom,0px)}
+
+@media (max-width:380px){
+  .wrap{padding:0 12px}
+  .hero h1{font-size:1.85rem}
+  .hero .ghost-kr{font-size:4.6rem}
+  .card{padding:14px;gap:12px}
+  .avatar{width:48px;height:48px;font-size:1rem}
+  .cname{font-size:1.02rem}
+}
+@media (max-width:340px){
+  .hero h1{font-size:1.65rem}
+  .btn{font-size:.82rem;padding:6px 11px}
+}
+</style>
+</head>
+<body>
+<div class="bar"><div class="wrap">
+  <div class="langs" role="group" aria-label="Language">
+    <button data-l="th">ไทย</button><button data-l="en">EN</button><button data-l="ko">한국어</button>
+  </div>
+  <div class="navmenu">
+    <button class="btn ghost" id="navToggle" aria-haspopup="true" aria-expanded="false" aria-label="More pages" type="button">🔗</button>
+    <div class="navdrop" id="navDrop" role="menu">
+      <a class="navdrop-item" id="tripTopBtn" target="_blank" rel="noopener" role="menuitem"><span class="ic">🍁</span><span class="lbl">Trip</span></a>
+      <a class="navdrop-item" id="clTopBtn" target="_blank" rel="noopener" role="menuitem"><span class="ic">🎒</span><span class="lbl">Checklist</span></a>
+      <a class="navdrop-item" id="fdTopBtn" target="_blank" rel="noopener" role="menuitem"><span class="ic">✈️</span><span class="lbl">Flight</span></a>
+    </div>
+  </div>
+</div></div>
+<div id="app"></div>
+
+<script>
+function L(th,en,ko){ return {th:th,en:en,ko:ko}; }
+var TRIP_URL = "index.html";
+var CHECKLIST_URL = "seoul-checklist.html";
+var FLIGHTDETAILS_URL = "seoul-flight-details.html";
+
+var UI = {
+ th:{ title:"สมาชิกผู้เดินทาง", sub:"รายชื่อผู้ร่วมทริปโซล 15–20 ต.ค. 2026 ทั้งหมด 5 ท่าน",
+  dob:"วันเกิด", job:"อาชีพ", passport:"เลขหนังสือเดินทาง", expiry:"วันหมดอายุ", valid:"เหลืออายุมากกว่า 6 เดือนหลังทริป", tripBtn:"หน้าแผนเที่ยว", clBtn:"เช็กลิสต์เตรียมตัว", fdBtn:"รายละเอียดเที่ยวบิน",
+  jobs:{"Government Teacher":"ข้าราชการครู","Used Car Dealer":"ผู้จำหน่ายรถมือสอง"},
+  noteTitle:"หมายเหตุ", notes:["ชื่อและข้อมูลสะกดตามที่ให้มา ควรตรวจให้ตรงกับหน้าพาสปอร์ตทุกตัวอักษรก่อนจองตั๋วหรือที่พัก โดยเฉพาะเลขหนังสือเดินทาง","พาสปอร์ตทุกเล่มหมดอายุหลังวันเดินทางกลับ (20 ต.ค. 2026) เกิน 6 เดือน ซึ่งตรงตามเกณฑ์ที่หลายประเทศกำหนด แต่ควรตรวจกับสายการบิน/ด่าน ตม. อีกครั้งก่อนเดินทาง","ยังไม่มีเบอร์ติดต่อฉุกเฉินของแต่ละคน ถ้ามีข้อมูลเพิ่มเติมส่งมาได้ จะใส่ให้ในหน้านี้"]},
+ en:{ title:"Traveler details", sub:"5 people joining the Seoul trip, 15–20 Oct 2026",
+  dob:"Date of birth", job:"Occupation", passport:"Passport no.", expiry:"Expiry date", valid:"Valid more than 6 months after the trip", tripBtn:"Trip plan", clBtn:"Packing checklist", fdBtn:"Flight details",
+  jobs:{}, noteTitle:"Notes", notes:["Names and details are shown exactly as provided. Double-check every letter, especially the passport number, against each passport before booking flights or stays.","Every passport is valid more than 6 months past the return date (20 Oct 2026), which meets the common entry requirement, but reconfirm with your airline or immigration before you travel.","Emergency contact numbers are not yet included. Send them and I can add them here."]},
+ ko:{ title:"여행 인원 정보", sub:"2026년 10월 15~20일 서울 여행에 참여하는 5명입니다",
+  dob:"생년월일", job:"직업", passport:"여권번호", expiry:"여권 만료일", valid:"귀국일 기준 6개월 이상 유효", tripBtn:"여행 일정", clBtn:"준비물 체크리스트", fdBtn:"항공편 상세정보",
+  jobs:{"Government Teacher":"공립학교 교사","Used Car Dealer":"중고차 딜러"},
+  noteTitle:"참고", notes:["이름과 정보는 입력된 그대로 표기했습니다. 항공권·숙소 예약 전에 여권번호를 포함해 여권과 한 글자씩 대조해 주세요.","모든 여권이 귀국일(2026.10.20) 기준 6개월 이상 유효하여 일반적인 입국 요건을 충족하지만, 출발 전 항공사·출입국 규정을 다시 확인하세요.","비상 연락처는 아직 포함되어 있지 않습니다. 정보를 주시면 이 페이지에 추가하겠습니다."]}
+};
+
+var LINES = ["var(--l1)","var(--l2)","var(--l3)","var(--l4)","var(--l5)"];
+
+var PEOPLE = [
+ {name:"Mr. Tuchchakorn Thongnak", dob:"20 Jun 1993", dobTh:"20 มิ.ย. 2536", dobKo:"1993.06.20", job:"Government Teacher", init:"TT", passport:"AD2338089", expiry:"25 Jun 2030", expiryTh:"25 มิ.ย. 2573", expiryKo:"2030.06.25"},
+ {name:"Miss Sutita Kaeoluang", dob:"9 May 1995", dobTh:"9 พ.ค. 2538", dobKo:"1995.05.09", job:"Government Teacher", init:"SK", passport:"AD3708843", expiry:"17 Jul 2031", expiryTh:"17 ก.ค. 2574", expiryKo:"2031.07.17"},
+ {name:"Mr. Waykin Sounkrai", dob:"29 Sep 1993", dobTh:"29 ก.ย. 2536", dobKo:"1993.09.29", job:"Used Car Dealer", init:"WS", passport:"AC6521551", expiry:"22 Mar 2034", expiryTh:"22 มี.ค. 2577", expiryKo:"2034.03.22"},
+ {name:"Miss Jidarat Wichaidit", dob:"26 Dec 1994", dobTh:"26 ธ.ค. 2537", dobKo:"1994.12.26", job:"Government Teacher", init:"JW", passport:"AC6521540", expiry:"22 Mar 2034", expiryTh:"22 มี.ค. 2577", expiryKo:"2034.03.22"},
+ {name:"Mr. Krittanai Khamwattana", dob:"1 Oct 1994", dobTh:"1 ต.ค. 2537", dobKo:"1994.10.01", job:"Used Car Dealer", init:"KK", passport:"AC8468045", expiry:"3 Sep 2031", expiryTh:"3 ก.ย. 2574", expiryKo:"2031.09.03"}
+];
+
+function el(tag, cls, text){ var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+
+var lang = "th";
+try { var s = localStorage.getItem("seoul-lang"); if (s) lang = s; else { var n = (navigator.language||"th").slice(0,2); if (n==="ko"||n==="en") lang = n; } } catch(e) {}
+
+function render(){
+  var u = UI[lang], app = document.getElementById("app");
+  document.documentElement.lang = lang;
+  document.title = u.title + " · Seoul";
+  app.textContent = "";
+  document.querySelectorAll(".langs button").forEach(function(b){ b.setAttribute("aria-pressed", b.getAttribute("data-l")===lang ? "true":"false"); });
+  var tb = document.getElementById("tripTopBtn"); tb.href = TRIP_URL; tb.querySelector(".lbl").textContent = u.tripBtn;
+  var cb = document.getElementById("clTopBtn"); cb.href = CHECKLIST_URL; cb.querySelector(".lbl").textContent = u.clBtn;
+  var fdb = document.getElementById("fdTopBtn"); fdb.href = FLIGHTDETAILS_URL; fdb.querySelector(".lbl").textContent = u.fdBtn;
+
+  var hero = el("header","hero"); var gh = el("div","ghost-kr","인원"); gh.setAttribute("aria-hidden","true"); hero.appendChild(gh);
+  var hw = el("div","wrap"); hero.appendChild(hw);
+  hw.appendChild(el("span","eyebrow","👥 Seoul · 15–20 Oct 2026"));
+  hw.appendChild(el("h1",null,u.title));
+  hw.appendChild(el("p",null,u.sub));
+  var hl = el("div","hero-links");
+  var a1 = el("a","btn"); a1.href = TRIP_URL; a1.target="_blank"; a1.rel="noopener"; a1.textContent = ""; a1.title = u.tripBtn; a1.appendChild(document.createTextNode("🍁 ")); a1.appendChild(el("span","lbl",u.tripBtn)); hl.appendChild(a1);
+  var a2 = el("a","btn ghost"); a2.href = CHECKLIST_URL; a2.target="_blank"; a2.rel="noopener"; a2.textContent = ""; a2.title = u.clBtn; a2.appendChild(document.createTextNode("🎒 ")); a2.appendChild(el("span","lbl",u.clBtn)); hl.appendChild(a2);
+  hw.appendChild(hl);
+  app.appendChild(hero);
+
+  var body = el("div","wrap"); app.appendChild(body);
+  var cards = el("div","cards"); cards.style.marginTop = "28px";
+
+  PEOPLE.forEach(function(p,i){
+    var card = el("div","card"); card.style.setProperty("--c",LINES[i]);
+    var av = el("div","avatar",p.init); card.appendChild(av);
+    var info = el("div","cinfo");
+    var top = el("div","card-top");
+    var num = el("div","cnum", String(i+1)); top.appendChild(num);
+    var nm = el("div","cname",p.name); top.appendChild(nm);
+    info.appendChild(top);
+    var jobLabel = (lang!=="en" && u.jobs[p.job]) ? u.jobs[p.job] : p.job;
+    info.appendChild(el("span","crole",jobLabel));
+    var dl = el("dl","cmeta");
+    var dobVal = lang==="th" ? p.dobTh : (lang==="ko" ? p.dobKo : p.dob);
+    var expVal = lang==="th" ? p.expiryTh : (lang==="ko" ? p.expiryKo : p.expiry);
+    dl.appendChild(el("dt",null,u.dob)); dl.appendChild(el("dd",null,dobVal));
+    dl.appendChild(el("dt",null,u.job)); dl.appendChild(el("dd",null,jobLabel));
+    dl.appendChild(el("dt",null,u.passport)); dl.appendChild(el("dd","mono",p.passport));
+    var expDd = el("dd",null,expVal + "  "); var badge = el("span","validtag","✓ " + u.valid); expDd.appendChild(badge);
+    dl.appendChild(el("dt",null,u.expiry)); dl.appendChild(expDd);
+    info.appendChild(dl);
+    card.appendChild(info);
+    cards.appendChild(card);
+  });
+  body.appendChild(cards);
+
+  var nt = el("div","note"); nt.appendChild(el("b",null,u.noteTitle));
+  var ul = el("ul"); u.notes.forEach(function(t){ ul.appendChild(el("li",null,t)); }); nt.appendChild(ul); body.appendChild(nt);
+  body.appendChild(el("footer",null,""));
+}
+
+document.querySelectorAll(".langs button").forEach(function(b){
+  b.addEventListener("click", function(){
+    lang = b.getAttribute("data-l");
+    try { localStorage.setItem("seoul-lang", lang); } catch(e) {}
+    render();
+  });
+});
+
+var navToggle = document.getElementById("navToggle");
+var navDrop = document.getElementById("navDrop");
+function closeNavDrop(){ navDrop.classList.remove("open"); navToggle.setAttribute("aria-expanded","false"); }
+function openNavDrop(){ navDrop.classList.add("open"); navToggle.setAttribute("aria-expanded","true"); }
+navToggle.addEventListener("click", function(e){
+  e.stopPropagation();
+  if (navDrop.classList.contains("open")) closeNavDrop(); else openNavDrop();
+});
+navDrop.addEventListener("click", function(e){ e.stopPropagation(); });
+document.querySelectorAll(".navdrop-item").forEach(function(a){ a.addEventListener("click", closeNavDrop); });
+document.addEventListener("click", closeNavDrop);
+document.addEventListener("keydown", function(e){ if (e.key === "Escape") closeNavDrop(); });
+
+render();
+</script>
+</body>
+</html>

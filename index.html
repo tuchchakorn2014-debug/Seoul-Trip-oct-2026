@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Seoul trip 15–20 Oct 2026">
+<title>Seoul 15–20 Oct 2026</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;700&family=Noto+Serif+Thai:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&display=swap">
+<style>
+:root{
+  --bg:#f2f5fa; --surface:#ffffff; --ink:#0f1f42; --muted:#5a6784; --line:#d9e1ee;
+  --accent:#0052a4; --accent-ink:#ffffff; --gold:#f3c623; --gold-ink:#2b2200;
+  --l1:#4a5b82; --l2:#00873f; --l3:#d9650a; --l4:#8250a0; --l5:#0052a4; --l6:#c62a3a; --on-line:#ffffff;
+  --hero-a:#0f1f42; --hero-b:#173a78; --hero-ink:#ffffff;
+  box-sizing:border-box;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0b1326; --surface:#16213b; --ink:#eaf0fa; --muted:#9bacc8; --line:#2a3959;
+    --accent:#6fb0ff; --accent-ink:#06213f; --gold:#f3c623; --gold-ink:#2b2200;
+    --l1:#93a6d2; --l2:#3ecf7f; --l3:#ff9a45; --l4:#c9a0e6; --l5:#66a8ff; --l6:#ff7a88; --on-line:#0b1326;
+    --hero-a:#101c3a; --hero-b:#1a3468;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0b1326; --surface:#16213b; --ink:#eaf0fa; --muted:#9bacc8; --line:#2a3959;
+  --accent:#6fb0ff; --accent-ink:#06213f; --gold:#f3c623; --gold-ink:#2b2200;
+  --l1:#93a6d2; --l2:#3ecf7f; --l3:#ff9a45; --l4:#c9a0e6; --l5:#66a8ff; --l6:#ff7a88; --on-line:#0b1326;
+  --hero-a:#101c3a; --hero-b:#1a3468;
+}
+html{scroll-padding-top:calc(76px + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+*{box-sizing:border-box}
+html,body{overflow-x:hidden}
+body{overflow-wrap:break-word;word-break:break-word}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans Thai","Noto Sans KR",system-ui,sans-serif;line-height:1.65;font-size:16px;max-width:440px;width:100%;margin-left:auto;margin-right:auto;padding-bottom:env(safe-area-inset-bottom,0px)}
+html[lang="en"] body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+h1,h2,h3{font-family:"Noto Serif Thai","Noto Sans KR",Georgia,serif;margin:0;line-height:1.25}
+html[lang="en"] h1,html[lang="en"] h2,html[lang="en"] h3,html[lang="en"] .code{font-family:Georgia,"Times New Roman",serif}
+html[lang="ko"] h1,html[lang="ko"] h2,html[lang="ko"] h3{font-family:"Noto Sans KR",sans-serif;font-weight:900}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.wrap{width:100%;padding:0 14px}
+
+/* top bar */
+.bar{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:8px;padding-bottom:8px;flex-wrap:wrap}
+.langs{display:flex;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:3px;flex:none}
+.langs button{font:inherit;font-size:.85rem;font-weight:700;padding:6px 10px;border-radius:999px;border:0;background:transparent;color:var(--muted);cursor:pointer;min-height:36px}
+.langs button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.navmenu{position:relative;flex:none}
+.navdrop{position:absolute;top:calc(100% + 8px);right:0;background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:0 12px 32px rgba(9,20,50,.2);padding:6px;display:flex;flex-direction:column;gap:2px;min-width:180px;z-index:50;opacity:0;pointer-events:none;transform:translateY(-6px);transition:opacity .15s ease, transform .15s ease}
+.navdrop.open{opacity:1;pointer-events:auto;transform:translateY(0)}
+.navdrop-item{display:flex;align-items:center;gap:10px;padding:13px 12px;min-height:44px;border-radius:10px;text-decoration:none;color:var(--ink);font-weight:600;font-size:.95rem}
+.navdrop-item:hover,.navdrop-item:focus-visible{background:var(--bg)}
+.navdrop-item .ic{font-size:1.15rem;flex:none}
+.lbl{display:inline}
+.jump{display:flex;gap:6px;align-items:center;flex:1 1 100%;order:3;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.jump::-webkit-scrollbar{display:none}
+.jump a.sec{flex:none;font-size:.88rem;text-decoration:none;color:var(--muted);padding:4px 8px;border-radius:6px}
+.jump a.sec:hover{color:var(--ink)}
+.jump a.dn{flex:none;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.85rem;text-decoration:none;background:var(--c);color:var(--on-line)}
+
+/* hero */
+.hero{background:linear-gradient(160deg,var(--hero-a),var(--hero-b));color:var(--hero-ink);position:relative;overflow:hidden}
+.hero .wrap{padding-top:calc(24px + env(safe-area-inset-top,0px));padding-bottom:60px;position:relative}
+.hero .ghost{position:absolute;right:-4px;top:-4px;font-family:"Noto Sans KR",sans-serif;font-weight:900;font-size:5.5rem;line-height:1;color:rgba(255,255,255,.07);pointer-events:none;user-select:none}
+.dates{display:inline-flex;gap:8px;align-items:center;background:var(--gold);color:var(--gold-ink);font-weight:700;padding:4px 12px;border-radius:999px;font-size:.85rem}
+.hero h1{font-size:2.2rem;font-weight:800;margin:14px 0 8px;letter-spacing:-.01em}
+.hero p{margin:0;max-width:100%;opacity:.85;font-size:.96rem}
+.lines{display:flex;gap:6px;margin-top:22px}
+.lines i{height:6px;flex:1;max-width:56px;border-radius:3px;background:var(--c)}
+.hero-links-wrap{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+.hero-btn{margin-top:0;background:var(--gold);border-color:var(--gold);color:var(--gold-ink);font-size:.86rem;padding:10px 16px;min-height:44px}
+.hero-btn:hover{filter:brightness(1.05)}
+.hero-btn.ghost2{background:transparent;border-color:rgba(255,255,255,.5);color:#fff}
+
+/* flights overlapping hero */
+.flights{margin-top:-40px;display:grid;grid-template-columns:1fr;gap:12px;position:relative}
+.pass{background:var(--surface);border-radius:18px;box-shadow:0 10px 30px rgba(9,20,50,.16);position:relative}
+.pass-head{padding:12px 16px 0;display:flex;justify-content:space-between;align-items:center;font-weight:700;gap:8px;flex-wrap:wrap}
+.pass-head span:last-child{color:var(--muted);font-weight:500;font-size:.92rem}
+.route-row{display:flex;align-items:center;gap:8px;padding:8px 12px 12px;flex-wrap:wrap;justify-content:center}
+.code{font-family:"Noto Serif Thai",Georgia,serif;font-size:1.6rem;font-weight:800;line-height:1}
+.time{font-weight:700;font-size:.92rem}
+.city{color:var(--muted);font-size:.78rem;line-height:1.3}
+.gap{flex:1;text-align:center;color:var(--muted);font-size:.68rem;line-height:1.2;min-width:44px}
+.gap .dash{height:2px;background:repeating-linear-gradient(90deg,var(--muted) 0 5px,transparent 5px 10px);margin:0 0 5px}
+.rt{text-align:right}
+.perf{border-top:2px dashed var(--line);margin:0 12px;position:relative}
+.perf::before,.perf::after{content:"";position:absolute;top:-12px;width:22px;height:22px;border-radius:50%;background:var(--bg)}
+.perf::before{left:-23px}.perf::after{right:-23px}
+.pass-foot{padding:10px 16px 14px;display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.pass-foot .small{flex:1 1 140px}
+.small{color:var(--muted);font-size:.88rem;line-height:1.45}
+
+.btn{display:inline-flex;align-items:center;gap:6px;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:700;padding:9px 14px;min-height:42px;border-radius:999px;font-size:.9rem;white-space:nowrap;border:1.5px solid var(--accent)}
+.btn.ghost{background:transparent;color:var(--accent)}
+.btn svg{width:15px;height:15px;flex:none}
+
+h2.sec{font-size:1.3rem;margin:36px 0 12px}
+.sub{color:var(--muted);margin:-6px 0 22px;max-width:100%}
+
+/* stay */
+.stay{background:var(--surface);border-radius:18px;overflow:hidden;display:grid;grid-template-columns:1fr;box-shadow:0 4px 18px rgba(9,20,50,.07)}
+.stay .key{background:var(--gold);color:var(--gold-ink);padding:14px;display:flex;flex-direction:row;justify-content:center;align-items:center;gap:8px;font-weight:800;text-align:center;min-width:auto}
+.stay .key b{font-size:1.5rem;line-height:1}
+.stay .key span{font-size:.8rem;font-weight:700}
+.stay .info{padding:16px}
+.stay h3{font-size:1.25rem;margin-bottom:8px}
+.kv{display:grid;grid-template-columns:1fr;gap:2px 0;margin:0 0 14px;font-size:.95rem}
+.kv dt{color:var(--muted);margin-top:10px;font-size:.82rem}
+.kv dd{margin:0 0 2px;overflow-wrap:anywhere}
+.tipbox{margin-top:12px;font-size:.92rem;color:var(--muted);padding-left:14px;border-left:3px solid var(--gold)}
+
+/* day timeline */
+.day{--c:var(--l1);margin:0 0 42px}
+.day-head{display:flex;align-items:center;gap:12px;margin-bottom:6px}
+.badge{flex:none;width:48px;height:48px;border-radius:50%;background:var(--c);color:var(--on-line);display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1;box-shadow:0 0 0 5px var(--bg),0 0 0 8px var(--c)}
+.badge span{font-size:.62rem;font-weight:700;opacity:.9;margin-bottom:2px}
+.badge b{font-size:1.2rem;font-weight:800}
+.day-head h3{font-size:1.15rem}
+.day-head .small{font-size:.92rem}
+.route{margin-left:20px;border-left:6px solid var(--c);padding:16px 0 4px 26px;position:relative}
+.day-note{margin:0 0 16px;color:var(--muted);max-width:100%}
+.stn{position:relative;display:flex;gap:12px;margin:0 0 22px}
+.stn .mark{position:absolute;left:-41px;top:2px;width:24px;height:24px;border-radius:50%;background:var(--surface);border:5px solid var(--c);display:flex;align-items:center;justify-content:center}
+.stn input{position:absolute;left:-41px;top:2px;width:24px;height:24px;margin:0;opacity:0;cursor:pointer;z-index:1}
+.stn input:checked + .mark{background:var(--c)}
+.stn input:checked + .mark::after{content:"";width:6px;height:11px;border:solid var(--on-line);border-width:0 2.5px 2.5px 0;transform:rotate(45deg) translate(-1px,-1px)}
+.stn input:focus-visible + .mark{outline:3px solid var(--gold);outline-offset:2px}
+.stn .txt{flex:1;min-width:0}
+.stn .top{display:flex;align-items:center;gap:8px 10px;flex-wrap:wrap;min-height:32px}
+.stn .name{flex:1 1 160px;min-width:0;font-weight:700;font-size:1rem;overflow-wrap:anywhere}
+.stn input:checked ~ .txt .name{color:var(--muted);text-decoration:line-through}
+.time-chip{flex:none;font-size:.82rem;font-weight:700;padding:2px 10px;border-radius:999px;border:1.5px solid var(--c);color:var(--ink);background:var(--surface);white-space:nowrap;display:inline-flex;align-items:center;min-height:28px}
+.time-chip.main{background:var(--c);color:var(--on-line)}
+.desc{margin:6px 0 4px;color:var(--ink);font-size:.95rem;line-height:1.65;max-width:100%}
+.hrs{margin:0;color:var(--muted);font-size:.85rem;line-height:1.5}
+.utag{display:inline-block;margin-left:6px;font-size:.72rem;font-weight:700;color:#8a6100;background:color-mix(in srgb, var(--gold) 30%, transparent);padding:1px 8px;border-radius:999px;white-space:nowrap;vertical-align:middle}
+.hrs b{color:var(--ink);font-weight:700}
+.stn.ev{margin-bottom:14px}
+.stn.ev .mark{width:14px;height:14px;left:-36px;top:8px;border-width:3px}
+.stn.ev .name{font-weight:400;font-size:.95rem;color:var(--muted)}
+.stn.ev .top{min-height:28px}
+.checks{margin:0 0 8px;padding-left:20px}
+.checks li{margin:0 0 8px;max-width:100%}
+.tip{margin:6px 0 10px;font-size:.92rem;background:var(--surface);border:1px dashed var(--line);border-radius:10px;padding:8px 12px;color:var(--muted)}
+.terminus{position:absolute;left:-14px;bottom:-4px;width:22px;height:8px;border-radius:4px;background:var(--c)}
+
+.note{background:var(--surface);border-radius:14px;padding:14px 18px;margin:8px 0}
+.note ul{margin:6px 0 0;padding-left:20px;color:var(--muted);font-size:.93rem}
+footer{margin:24px 0 calc(40px + env(safe-area-inset-bottom,0px));color:var(--muted);font-size:.85rem}
+
+@media (max-width:380px){
+  .wrap{padding:0 12px}
+  .hero h1{font-size:1.8rem}
+  .hero .ghost{font-size:4rem}
+  .code{font-size:1.35rem}
+  .route{margin-left:14px;padding-left:20px}
+  .stn .mark,.stn input{left:-35px}
+  .stn.ev .mark{left:-30px}
+}
+@media (max-width:340px){
+  .hero h1{font-size:1.6rem}
+  .hero-btn,.btn{font-size:.82rem;padding:8px 12px}
+}
+</style>
+</head>
+<body>
+<div class="bar"><div class="wrap">
+  <div class="langs" role="group" aria-label="Language">
+    <button data-l="th">ไทย</button><button data-l="en">EN</button><button data-l="ko">한국어</button>
+  </div>
+  <nav class="jump" id="jump" aria-label="Sections"></nav>
+  <div class="navmenu">
+    <button class="btn ghost" id="navToggle" aria-haspopup="true" aria-expanded="false" aria-label="More pages" type="button">🔗</button>
+    <div class="navdrop" id="navDrop" role="menu">
+      <a class="navdrop-item" href="seoul-checklist.html" target="_blank" rel="noopener" id="checklistTopBtn" role="menuitem"><span class="ic">🎒</span><span class="lbl">Checklist</span></a>
+      <a class="navdrop-item" href="seoul-travelers.html" target="_blank" rel="noopener" id="travTopBtn" role="menuitem"><span class="ic">👥</span><span class="lbl">Travelers</span></a>
+      <a class="navdrop-item" href="seoul-flight-details.html" target="_blank" rel="noopener" id="fdTopBtn" role="menuitem"><span class="ic">✈️</span><span class="lbl">Flight</span></a>
+    </div>
+  </div>
+</div></div>
+<div id="app"></div>
+
+<script>
+var BASE = "https://map.naver.com/p/search/";
+function map(q){ return BASE + encodeURIComponent(q); }
+function L(th,en,ko){ return {th:th,en:en,ko:ko}; }
+
+/* ---------- UI strings ---------- */
+var UI = {
+ th:{title:"โซล", nights:"คืน", checklist:"เช็กลิสต์เตรียมตัวก่อนเดินทาง", travelers:"สมาชิกผู้เดินทาง", flightDetails:"รายละเอียดเที่ยวบิน", sub:"5 คืน · เที่ยวบิน ที่พัก แผนรายวันพร้อมเวลา และลิงก์ Naver Map",
+  flights:"เที่ยวบิน", outbound:"ขาไป", inbound:"ขากลับ", outDate:"พฤ. 15 ต.ค.", inDate:"อ. 20 ต.ค.",
+  bkk:"กรุงเทพฯ (BKK MAIN)", icn:"โซล (ICN T1)", arrNext:"ถึงวันที่ 16 ต.ค.", arrSame:"ถึงวันเดียวกัน",
+  icnT1:"สนามบินอินชอน เทอร์มินัล 1", icnTip:"แนะนำถึงสนามบินก่อนเวลาบิน 3 ชม.", openMap:"เปิดใน Naver Map", mapBtn:"แผนที่",
+  stay:"ที่พัก", stayName:"STAY ROCK (스테이락)", ci:"เช็กอิน", co:"เช็กเอาต์", addr:"ที่อยู่", addrEn:"ที่อยู่ (อังกฤษ)", tel:"โทร",
+  stayTip:"เที่ยวบินลงเวลา 06:15 อาจถึงที่พักก่อนเวลาเช็กอิน ลองฝากกระเป๋าไว้ก่อนได้ (ควรถามที่พักล่วงหน้าทางโทรศัพท์)",
+  plan:"แผนรายวัน", planSub:"เวลาในแผนเป็นช่วงที่แนะนำ คิดจากเวลาเปิด-ปิดของแต่ละที่ กดติ๊กเมื่อไปแล้ว หรือกดปุ่มแผนที่เพื่อเปิดใน Naver Map",
+  day:"วัน", hrs:"เวลาเปิด", travel:"เดินทาง", unverified:"ยังไม่ยืนยัน",
+  chk:"ตรวจความสอดคล้องของเวลา", chkSub:"สิ่งที่ตรวจแล้วและเหตุผลที่จัดลำดับแบบนี้",
+  noteTitle:"หมายเหตุ",
+  notes:["ลิงก์แผนที่ทุกจุดตอนนี้เป็นลิงก์ Naver Map ตรงจากข้อมูลที่คุณให้มา (naver.me) ไม่ใช่แค่คำค้นหาเหมือนก่อนหน้า จึงแม่นยำกว่าเดิมมาก","ระยะเวลาเดินทางระหว่างจุดต่าง ๆ ยังเป็นค่าประมาณ ให้ดูเวลาจริงในแอป Naver Map หรือ Kakao Metro","รายการที่มีป้ายสีทอง \"ยังไม่ยืนยัน\" คือจุดที่ข้อมูลต้นทางเองระบุว่ายังไม่ได้ยืนยัน ควรเช็กชื่อร้าน/เวลาเปิดอีกครั้งก่อนไป","วันนัดคลินิก (วัน 5) ใช้เวลาในข้อมูลที่ให้มา ควรตรวจกับใบนัดจริงอีกครั้ง"],
+  foot:"ข้อมูลเที่ยวบินและที่พักตามที่ให้มา ควรตรวจสอบเวลาบินล่าสุดกับสายการบินอีกครั้งก่อนเดินทาง"},
+ en:{title:"Seoul", nights:"nights", checklist:"Pre-trip checklist", travelers:"Travelers", flightDetails:"Flight details", sub:"5 nights · Flights, stay, a timed day-by-day plan, and Naver Map links",
+  flights:"Flights", outbound:"Outbound", inbound:"Return", outDate:"Thu 15 Oct", inDate:"Tue 20 Oct",
+  bkk:"Bangkok (BKK MAIN)", icn:"Seoul (ICN T1)", arrNext:"Arrives 16 Oct", arrSame:"Same day",
+  icnT1:"Incheon Airport, Terminal 1", icnTip:"Aim to reach the airport 3 hours before departure.", openMap:"Open in Naver Map", mapBtn:"Map",
+  stay:"Stay", stayName:"STAY ROCK (스테이락)", ci:"Check-in", co:"Check-out", addr:"Address (Korean)", addrEn:"Address (English)", tel:"Phone",
+  stayTip:"You land at 06:15, before normal check-in. Ask the host by phone in advance whether you can leave your bags.",
+  plan:"Day by day", planSub:"Times are suggested slots based on each place's opening hours. Tick places as you go, or tap Map to open them in Naver Map.",
+  day:"Day", hrs:"Hours", travel:"Travel", unverified:"unverified",
+  chk:"Timing check", chkSub:"What was checked, and why the days are ordered this way",
+  noteTitle:"Notes",
+  notes:["Every map link now points straight to the Naver Map link (naver.me) from the data you provided, not just a search query as before, so they are far more precise.","Travel times between places are still estimates. Use Naver Map or Kakao Metro for real-time routes.","Items tagged \"unverified\" in gold are the ones the source data itself marked as unverified — double-check the shop name and hours before you go.","The clinic appointment (Day 5) uses the time from the provided data. Confirm it against your actual booking."],
+  foot:"Flight and stay details are as you provided. Recheck flight times with the airline before you travel."},
+ ko:{title:"서울", nights:"박", checklist:"출발 전 체크리스트", travelers:"여행 인원", flightDetails:"항공편 상세정보", sub:"5박 6일 여정 · 항공편, 숙소, 시간별 일자 일정, 네이버 지도 링크",
+  flights:"항공편", outbound:"출국", inbound:"귀국", outDate:"10월 15일 (목)", inDate:"10월 20일 (화)",
+  bkk:"방콕 (BKK MAIN)", icn:"서울 (ICN T1)", arrNext:"10월 16일 도착", arrSame:"당일 도착",
+  icnT1:"인천국제공항 제1여객터미널", icnTip:"출발 3시간 전까지 공항에 도착하세요.", openMap:"네이버 지도에서 열기", mapBtn:"지도",
+  stay:"숙소", stayName:"스테이락 (STAY ROCK)", ci:"체크인", co:"체크아웃", addr:"주소", addrEn:"주소 (영문)", tel:"전화",
+  stayTip:"도착 시각이 06:15라 체크인 시간보다 이릅니다. 짐 보관이 가능한지 미리 전화로 문의하세요.",
+  plan:"일자별 일정", planSub:"시간은 각 장소의 운영시간을 고려한 추천 시간대입니다. 방문한 곳은 체크하고, 지도 버튼으로 네이버 지도를 여세요.",
+  day:"일차", hrs:"운영시간", travel:"이동", unverified:"미확인",
+  chk:"시간 점검", chkSub:"확인한 내용과 이 순서로 배치한 이유",
+  noteTitle:"참고",
+  notes:["모든 지도 링크는 이제 이전처럼 검색어가 아니라 제공해 주신 데이터의 네이버 지도 링크(naver.me)로 바로 연결되어 훨씬 정확합니다.","장소 간 이동 시간은 여전히 추정치입니다. 실시간 경로는 네이버 지도나 카카오맵/지하철 앱을 이용하세요.","금색 \"미확인\" 표시가 된 항목은 원본 데이터에서 미확인으로 표시된 곳입니다. 방문 전 상호명과 영업시간을 다시 확인하세요.","클리닉 예약(5일차) 시간은 제공된 데이터 기준이니 실제 예약 내용과 다시 대조하세요."],
+  foot:"항공편과 숙소 정보는 제공해 주신 내용 기준입니다. 출발 전에 항공사에서 최신 시간을 다시 확인하세요."}
+};
+
+/* ---------- places ---------- */
+/* ---------- places (from confirmed itinerary data) ---------- */
+var P = {
+ "d1-01":{n:L("Incheon Airport Terminal 1","Incheon Airport Terminal 1","인천국제공항 제1터미널"), naver:null, q:"인천국제공항 제1여객터미널", icon:"🛬",
+  d:L("ลงเครื่อง ผ่านตม. ซื้อบัตร T-money แล้วนั่ง AREX ไป Gongdeok","Land, clear immigration, buy a T-money card, then take AREX toward Gongdeok","착륙 후 입국심사, 티머니 카드 구매, 공덕 방면 공항철도(AREX) 탑승"),
+  addr:"Incheon International Airport Terminal 1", verified:true},
+ "d1-02":{n:L("Stay Rock (ฝากกระเป๋า)","Stay Rock (bag drop)","스테이락 (짐 보관)"), naver:"https://naver.me/xpjeGsZq", icon:"🎒",
+  d:L("ฝากกระเป๋าไว้ก่อน เช็กอินจริงราว 15:00","Drop off bags for now; actual check-in is around 15:00","우선 짐만 맡기고, 실제 체크인은 약 15:00"),
+  addr:"9-70 Yeomni-dong, Mapo-gu, Seoul", verified:true},
+ "d1-03":{n:L("ShinLeeDoGa Hongdae Cafe","ShinLeeDoGa Hongdae Cafe","신이도가 홍대"), naver:"https://naver.me/GfrOioEj", icon:"☕",
+  d:L("คาเฟ่ย่านฮงแด พักผ่อนและมื้อสาย","A cafe in Hongdae — rest and a late-morning bite","홍대의 카페, 휴식 및 브런치"),
+  addr:"367-31 Seogyo-dong, Mapo-gu, Seoul", verified:false},
+ "d1-04":{n:L("Idaejo Pork-on-the-Bone","Idaejo Pork-on-the-Bone","이대조 감자탕"), naver:"https://naver.me/xiLGQS3d", icon:"🍽️",
+  d:L("ร้านซี่โครง/หมูติดกระดูก มื้อเที่ยง","Pork-on-the-bone restaurant (ribs) — lunch","돼지등뼈(감자탕) 전문점, 점심"),
+  addr:"158-20 Donggyo-dong, Mapo-gu, Seoul", verified:false},
+ "d1-05":{n:L("Hongik Univ. Street","Hongik Univ. Street","홍익대 거리"), naver:"https://naver.me/GtYdpICG", icon:"🛍️",
+  d:L("ถนนวัฒนธรรมวัยรุ่น ร้านเสื้อผ้า เครื่องสำอาง การแสดงริมทาง","Youth-culture street — clothing shops, cosmetics, street performances","청년 문화 거리, 의류·화장품 매장, 버스킹"),
+  addr:"Seogyo-dong, Mapo-gu, Seoul", verified:true},
+ "d1-06":{n:L("Stay Rock (เช็กอิน)","Stay Rock (check-in)","스테이락 (체크인)"), naver:"https://naver.me/xpjeGsZq", icon:"🏨",
+  d:L("เช็กอินจริง พักผ่อน","Check in and rest","체크인 및 휴식"),
+  addr:"9-70 Yeomni-dong, Mapo-gu, Seoul", verified:true},
+ "d1-07":{n:L("Ewha Womans Univ. Station Exit 5","Ewha Womans Univ. Station Exit 5","이대역 5번 출구"), naver:"https://naver.me/5kPtBJf6", icon:"🛍️",
+  d:L("ย่านช้อปปิ้งหน้ามหาวิทยาลัยสตรีอีฮวา","Shopping street in front of Ewha Womans University","이화여자대학교 앞 쇼핑 거리"),
+  addr:"Daeheung-dong, Mapo-gu, Seoul", verified:true},
+ "d1-08":{n:L("Hongs Jjukkumi","Hongs Jjukkumi","홍스쭈꾸미"), naver:"https://naver.me/FmGvJcKD", icon:"🍽️",
+  d:L("ร้านปลาหมึกจุ๊กกุมิผัดเผ็ด มื้อเย็น","Spicy stir-fried baby octopus restaurant — dinner","매콤한 쭈꾸미볶음 전문점, 저녁"),
+  addr:"331-21 Seogyo-dong, Mapo-gu, Seoul", verified:false},
+
+ "d2-01":{n:L("Gwanghwamun Gate","Gwanghwamun Gate","광화문"), naver:"https://naver.me/GO6daV9l", icon:"🏛️",
+  d:L("ประตูหลักด้านใต้ของพระราชวังเคียงบกกุง","The main southern gate of Gyeongbokgung Palace","경복궁의 남쪽 정문"),
+  addr:"1-57 Sejongno, Jongno-gu, Seoul", verified:true},
+ "d2-02":{n:L("พระราชวังเคียงฮุยกุง","Gyeonghuigung Palace","경희궁"), naver:"https://naver.me/xiLZg5lx", icon:"🏛️",
+  d:L("พระราชวังสมัยโชซอนฝั่งตะวันตก เข้าฟรี ปิดวันจันทร์","A western Joseon-era palace, free entry, closed on Mondays","서쪽에 위치한 조선시대 궁궐, 무료 입장, 월요일 휴관"),
+  addr:"1-126 Sinmunno 2(i)-ga, Jongno-gu, Seoul", verified:true},
+ "d2-03":{n:L("ESOA","ESOA","에소아"), naver:"https://naver.me/F8lwfIzu", icon:"☕",
+  d:L("ร้าน/คาเฟ่ในย่านซอชอน","A shop/cafe in Seochon","서촌의 상점/카페"),
+  addr:"51 Chebu-dong, Jongno-gu, Seoul", verified:false},
+ "d2-04":{n:L("Rapeure Flute Seochon","Rapeure Flute Seochon","라프레플루트 서촌"), naver:"https://naver.me/5T0TNKYU", icon:"☕",
+  d:L("ร้านในย่านซอชอน (สะกดใกล้เคียงกับ Rafre Fruit)","A shop in Seochon (spelling close to \"Rafre Fruit\")","서촌에 위치한 매장 (Rafre Fruit와 유사한 표기)"),
+  addr:"108 Ogin-dong, Jongno-gu, Seoul", verified:false},
+ "d2-05":{n:L("Sejong Center for the Performing Arts","Sejong Center for the Performing Arts","세종문화회관"), naver:"https://naver.me/xiLGXXU", icon:"🏛️",
+  d:L("ศูนย์ศิลปะการแสดง ติดจัตุรัสกวางฮวามุน","Performing arts center right by Gwanghwamun Square","광화문광장 옆 공연예술센터"),
+  addr:"81-3 Sejongno, Jongno-gu, Seoul", verified:true},
+ "d2-06":{n:L("Cheonggye Plaza","Cheonggye Plaza","청계광장"), naver:"https://naver.me/xNp8EvTZ", icon:"🏛️",
+  d:L("จุดเริ่มต้นลำธารช็องกเยช็อน ชมไฟยามค่ำ","The starting point of Cheonggyecheon stream — see the lights at dusk","청계천의 시작점, 저녁 조명 감상"),
+  addr:"1 Taepyeongno 1(il)-ga, Jung-gu, Seoul", verified:true},
+ "d2-07":{n:L("Coco Pharmacy","Coco Pharmacy","코코약국"), naver:"https://naver.me/x7eL7OtG", icon:"🛍️",
+  d:L("ร้านขายยา/ผลิตภัณฑ์สุขภาพ","Pharmacy / health-product store","약국/건강용품 매장"),
+  addr:"196 Euljiro 2(i)-ga, Jung-gu, Seoul", verified:false},
+ "d2-08":{n:L("MEITAWANG Salted Egg Tart","MEITAWANG Salted Egg Tart","메이타왕 소금계란타르트"), naver:"https://naver.me/5CCIybFG", icon:"🍽️",
+  d:L("ร้านทาร์ตไข่เค็ม","Salted egg tart shop","솔티드에그 타르트 전문점"),
+  addr:"42-1 Myeong-dong 1(il)-ga, Jung-gu, Seoul", verified:false},
+ "d2-09":{n:L("METCHA Myeong-dong","METCHA Myeong-dong","맷차 명동"), naver:"https://naver.me/FORt7VZh", icon:"☕",
+  d:L("ร้านชา/มัทฉะ จากนั้นเดินชมสตรีทฟู้ดเมียงดง","Tea/matcha cafe, then a walk through Myeongdong's street food","차/말차 카페, 이후 명동 길거리 음식 즐기기"),
+  addr:"37-1 Myeong-dong 1(il)-ga, Jung-gu, Seoul", verified:false},
+
+ "d3-01":{n:L("COEX","COEX","코엑스"), naver:"https://naver.me/xdM1Wn7C", icon:"🏛️",
+  d:L("คอมเพล็กซ์ใหญ่ ห้างใต้ดิน ห้องสมุด Starfield และอควาเรียม","Large underground mall complex with Starfield Library and an aquarium","대형 지하 복합몰, 별마당도서관, 아쿠아리움"),
+  addr:"159 Samseong-dong, Gangnam-gu, Seoul", verified:true},
+ "d3-02":{n:L("Mugyo Octopus Spicy Seafood Soup","Mugyo Octopus Spicy Seafood Soup","무교낙지 해물탕"), naver:"https://naver.me/GEdZDS18", icon:"🍽️",
+  d:L("ซุปปลาหมึกเผ็ดและซีฟู้ด มื้อเที่ยง","Spicy octopus and seafood soup — lunch","매운 낙지 해물탕, 점심"),
+  addr:"58-6 Bangi-dong, Songpa-gu, Seoul", verified:false},
+ "d3-03":{n:L("Songpa Tourist Information Center","Songpa Tourist Information Center","송파관광안내소"), naver:"https://naver.me/FuNFsJwL", icon:"ℹ️",
+  d:L("ศูนย์ข้อมูลนักท่องเที่ยว จากนั้นเดินเล่นชัมชิล/ทะเลสาบซอกชอน","Tourist information center, then a stroll around Jamsil / Seokchon Lake","관광안내소, 이후 잠실/석촌호수 산책"),
+  addr:"32 Sincheon-dong, Songpa-gu, Seoul", verified:true},
+ "d3-04":{n:L("88 Gold Beef","88 Gold Beef","88골드비프"), naver:"https://naver.me/GqfTSma5", icon:"🍽️",
+  d:L("ร้านเนื้อวัวใกล้ตลาดเนื้อมาจัง (18 ต.ค. เป็นวันอาทิตย์ที่ 3 — ตลาดเนื้อบางร้านมักปิด ควรโทรเช็กก่อน)","Beef restaurant near Majang meat market (18 Oct is the 3rd Sunday — some market stalls commonly close, call ahead)","마장 축산물시장 인근 소고기 식당 (10/18은 셋째 일요일 — 일부 매장 정기휴무일 가능성, 사전 확인 권장)"),
+  addr:"762-17 Majang-dong, Seongdong-gu, Seoul", verified:false},
+
+ "d4-01":{n:L("หมู่บ้านบุกชอนฮันอก","Bukchon Hanok Village","북촌한옥마을"), naver:"https://naver.me/FyAQVqvq", icon:"🏛️",
+  d:L("ย่านบ้านฮันอกดั้งเดิม เป็นที่อยู่อาศัยจริง ชมช่วง 10:00–17:00 และเดินเงียบ ๆ","Historic hanok residential neighborhood — visit 10:00–17:00 and keep it quiet","전통 한옥 주거 지역, 10:00–17:00 관람, 조용히 관람"),
+  addr:"105 Gye-dong, Jongno-gu, Seoul", verified:true},
+ "d4-02":{n:L("ถนน Gamgodang บุกชอน","Bukchon Gamgodang Street","북촌 감고당길"), naver:"https://naver.me/FNtwJldX", icon:"🏛️",
+  d:L("ถนนในย่านบุกชอน จุดถ่ายรูปยอดนิยม","A street in Bukchon, a popular photo spot","북촌의 거리, 인기 포토스팟"),
+  addr:"Anguk-dong, Jongno-gu, Seoul", verified:false},
+ "d4-03":{n:L("Dotori Garden Anguk","Dotori Garden Anguk","도토리가든 안국"), naver:"https://naver.me/xRgHWwjH", icon:"☕",
+  d:L("คาเฟ่เบเกอรี่บ้านเก่าสไตล์จิบลิ ขนมปังลูกโอ๊ก มาเดอลีน โยเกิร์ต","Ghibli-style bakery cafe in an old house — acorn bread, madeleines, yogurt","지브리 감성의 옛집 베이커리 카페, 도토리빵·마들렌·요거트"),
+  addr:"84-45 Jae-dong, Jongno-gu, Seoul", verified:true},
+ "d4-04":{n:L("ถนนวัฒนธรรมอินซาดง","Insadong Cultural Street","인사동 문화거리"), naver:"https://naver.me/GT4iCvV5", icon:"🛍️",
+  d:L("ถนนวัฒนธรรมดั้งเดิม หัตถกรรม ชา ของที่ระลึก","Traditional culture street — crafts, tea, souvenirs","전통 문화 거리, 공예품·차·기념품"),
+  addr:"Insa-dong, Jongno-gu, Seoul", verified:true},
+ "d4-05":{n:L("คลินิก Iseonu","Iseonu Plastic Surgery Clinic","이선우성형외과"), naver:"https://naver.me/G4d27wgq", icon:"💉",
+  d:L("นัดหมายคลินิกศัลยกรรม — ปรับช่วงเวลานี้ให้ตรงกับเวลานัดจริง","Cosmetic clinic appointment — adjust this slot to match your actual booking time","성형외과 예약 — 실제 예약 시간에 맞춰 이 시간대를 조정하세요"),
+  addr:"137-1 Jongno 3(sam)-ga, Jongno-gu, Seoul", verified:true},
+ "d4-06":{n:L("Gwangjang Market","Gwangjang Market","광장시장"), naver:"https://naver.me/x6Jeucc1", icon:"🧺",
+  d:L("ตลาดดั้งเดิมเก่าแก่ สตรีทฟู้ด มื้อเย็น","Historic traditional market — street food, dinner","유서 깊은 전통시장, 길거리 음식, 저녁"),
+  addr:"2-1 Yeji-dong, Jongno-gu, Seoul", verified:true},
+ "d4-07":{n:L("Seoul 88 Beer","Seoul 88 Beer","서울88비어"), naver:"https://naver.me/FetBgbvP", icon:"🍺",
+  d:L("ร้านเบียร์/ผับ ปิดท้ายวัน","Beer bar / pub to close out the day","맥주 펍, 하루 마무리"),
+  addr:"100 Myo-dong, Jongno-gu, Seoul", verified:false},
+
+ "d5-01":{n:L("Hongik Univ. Street","Hongik Univ. Street","홍익대 거리"), naver:"https://naver.me/GtYdpICG", icon:"🛍️",
+  d:L("ซื้อของฝากรอบสุดท้าย (ร้านส่วนใหญ่เปิดหลัง 11:00)","Last-minute souvenir shopping (most shops open after 11:00)","마지막 기념품 쇼핑 (가게는 11시 이후 오픈)"),
+  addr:"Seogyo-dong, Mapo-gu, Seoul", verified:true},
+ "d5-02":{n:L("Stay Rock (รับกระเป๋า)","Stay Rock (pick up bags)","스테이락 (짐 수령)"), naver:"https://naver.me/xpjeGsZq", icon:"🏨",
+  d:L("รับกระเป๋า เช็กเอาต์ ต้องออกภายใน 12:45–13:00","Pick up bags and check out — leave by 12:45–13:00","짐 수령, 체크아웃 — 12:45~13:00까지 출발"),
+  addr:"9-70 Yeomni-dong, Mapo-gu, Seoul", verified:true},
+ "d5-03":{n:L("สถานี Hongik Univ. (AREX)","Hongik Univ. Station (AREX)","홍대입구역 (공항철도)"), naver:"https://naver.me/GNJ5dzId", icon:"🚇",
+  d:L("ขึ้น AREX ไปอินชอน T1 ใช้เวลาประมาณ 55–60 นาที","Take AREX to Incheon T1, about 55–60 minutes","공항철도(AREX)로 인천공항 T1까지 약 55~60분"),
+  addr:"160 Yanghwa-ro, Mapo-gu, Seoul", verified:true},
+ "d5-04":{n:L("สนามบินอินชอน เทอร์มินัล 1","Incheon Airport Terminal 1","인천국제공항 제1터미널"), naver:null, q:"인천국제공항 제1여객터미널", icon:"🛫",
+  d:L("เช็กอินสำหรับเที่ยวบิน Air Premia YP601 ออก 17:15","Check in for Air Premia flight YP601, departing 17:15","에어프레미아 YP601 체크인, 17:15 출발"),
+  addr:"Incheon International Airport Terminal 1", verified:true}
+};
+
+function ev(time, th, en, ko){ return {t:"ev", time:time, x:L(th,en,ko)}; }
+function pl(id, time){ return {t:"pl", id:id, time:time}; }
+
+/* ---------- days ---------- */
+var DAYS = [
+ {n:1, d:L("พฤ. 15 ต.ค.","Thu 15 Oct","10/15 (목)"), t:L("ออกเดินทาง","Departure","출발"),
+  note:L("บินจากกรุงเทพฯ 22:45 ถึงอินชอนเช้าวันที่ 16 (โซลเร็วกว่าไทย 2 ชม.)","Fly from Bangkok at 22:45; land at Incheon on the morning of the 16th (Seoul is 2 hours ahead of Bangkok).","22:45 방콕 출발, 16일 아침 인천 도착 (서울이 방콕보다 2시간 빠름)."),
+  items:[ev("19:45","ถึงสนามบิน BKK (3 ชม. ก่อนบิน)","Arrive at BKK (3 hours before departure)","BKK 공항 도착 (출발 3시간 전)"), ev("22:45","บินจาก BKK","Depart BKK","BKK 출발")]},
+
+ {n:2, d:L("ศ. 16 ต.ค.","Fri 16 Oct","10/16 (금)"), t:L("ถึงโซล · ฮงแด · อีฮวา","Arrival · Hongdae · Ewha","도착 · 홍대 · 이대"),
+  note:L("มาจากข้อมูลแผนที่ล่าสุดที่ให้มา เรียงเวลาไว้ครบตั้งแต่ลงเครื่องถึงมื้อเย็น","Built from the latest itinerary data provided, timed from landing through dinner.","제공해 주신 최신 일정 데이터를 기준으로, 착륙부터 저녁까지 시간순으로 정리했습니다."),
+  items:[
+   pl("d1-01","06:15–09:15"), pl("d1-02","09:15–09:45"), pl("d1-03","09:45–11:30"),
+   pl("d1-04","11:30–13:00"), pl("d1-05","13:00–15:00"), pl("d1-06","15:00–17:30"),
+   pl("d1-07","17:30–19:15"), pl("d1-08","19:30–20:45")],
+  tip:L("ช่วง 09:15–09:45 เป็นแค่ฝากกระเป๋า เช็กอินจริงตอน 15:00 หลังกลับจากช้อปปิ้งฮงแด","09:15–09:45 is only a bag drop; the real check-in is at 15:00, after the Hongdae shopping loop.","09:15–09:45는 짐만 맡기는 시간이며, 실제 체크인은 홍대 쇼핑 후인 15:00입니다.")},
+
+ {n:3, d:L("ส. 17 ต.ค.","Sat 17 Oct","10/17 (토)"), t:L("กวางฮวามุน · ซอชอน · เมียงดง","Gwanghwamun · Seochon · Myeongdong","광화문 · 서촌 · 명동"),
+  note:L("เริ่มจากประตูกวางฮวามุนและพระราชวังเคียงฮุยกุง แวะคาเฟ่ย่านซอชอน แล้วไล่ไปทางตะวันออกจนถึงเมียงดงตอนค่ำ","Starts at Gwanghwamun Gate and Gyeonghuigung Palace, stops for cafes in Seochon, then moves east to Myeongdong in the evening.","광화문과 경희궁에서 시작해 서촌 카페를 들른 뒤, 저녁에는 동쪽 명동까지 이동합니다."),
+  items:[
+   pl("d2-01","09:00–09:45"), pl("d2-02","09:45–11:15"), pl("d2-03","11:45–12:45"),
+   pl("d2-04","13:00–14:00"), pl("d2-05","14:40–16:00"), pl("d2-06","16:15–18:00"),
+   pl("d2-07","18:15–19:00"), pl("d2-08","19:15–20:15"), pl("d2-09","20:15–21:30")],
+  tip:L("เคียงฮุยกุงปิดวันจันทร์ วันเสาร์นี้เข้าได้ตามปกติ ไม่ชนวันปิด","Gyeonghuigung closes on Mondays — this Saturday visit avoids the closure.","경희궁은 월요일 휴관이며, 토요일인 이 날은 문제없이 관람 가능합니다.")},
+
+ {n:4, d:L("อา. 18 ต.ค.","Sun 18 Oct","10/18 (일)"), t:L("โคเอ็กซ์ · ชัมชิล · มาจัง","COEX · Jamsil · Majang","코엑스 · 잠실 · 마장"),
+  note:L("ฝั่งกังนัม-ชัมชิลอยู่ไกลจากย่านอื่น เริ่มจากโคเอ็กซ์ช่วงสาย เดินเล่นซอกชอนตอนบ่าย ปิดท้ายมื้อเย็นเนื้อวัวใกล้ตลาดมาจัง","The Gangnam–Jamsil side sits far from the other areas: COEX in the morning, a stroll at Seokchon in the afternoon, then a beef dinner near Majang market.","강남·잠실 지역은 다른 곳과 멀어 오전 코엑스, 오후 석촌호수 산책, 저녁은 마장 인근에서 소고기로 마무리합니다."),
+  items:[
+   pl("d3-01","10:00–12:15"), pl("d3-02","12:50–14:15"), pl("d3-03","14:45–17:00"), pl("d3-04","17:30–19:15")],
+  tip:L("⚠️ วันนี้ตรงกับวันอาทิตย์ที่ 3 ของเดือน (18 ต.ค.) ซึ่งร้านค้าหลายแห่งในตลาดเนื้อมาจังมักปิดในวันนี้ ควรโทรเช็ก 88 Gold Beef ล่วงหน้า หรือเผื่อแผนสำรองไว้","⚠️ Today is the 3rd Sunday of the month (18 Oct), when many Majang meat-market stalls commonly close. Call 88 Gold Beef ahead of time, or have a backup plan.","⚠️ 오늘은 매월 셋째 일요일(10/18)로, 마장축산물시장의 많은 매장이 정기휴무일 가능성이 있습니다. 88골드비프에 미리 전화 확인하거나 대안을 준비하세요.")},
+
+ {n:5, d:L("จ. 19 ต.ค.","Mon 19 Oct","10/19 (월)"), t:L("บุกชอน · อินซาดง · ควังจัง","Bukchon · Insadong · Gwangjang","북촌 · 인사동 · 광장"),
+  note:L("เดินชมย่านฮันอกบุกชอนตอนสาย แวะคาเฟ่และอินซาดง มีคิวนัดคลินิกช่วงบ่าย ปิดท้ายด้วยตลาดควังจังตอนเย็น","A morning walk through Bukchon's hanok streets, a cafe stop and Insadong, a clinic slot in the afternoon, then Gwangjang Market in the evening.","오전에는 북촌 한옥 거리, 카페와 인사동, 오후에는 클리닉 예약, 저녁은 광장시장으로 마무리합니다."),
+  items:[
+   pl("d4-01","10:00–11:00"), pl("d4-02","11:00–12:00"), pl("d4-03","12:15–13:30"),
+   pl("d4-04","13:45–16:00"), pl("d4-05","16:00–17:30"), pl("d4-06","17:45–19:45"), pl("d4-07","20:00–21:30")],
+  tip:L("ช่วง 16:00–17:30 เป็นคิวนัดคลินิกที่ให้มา ปรับเวลาช่วงนี้ให้ตรงกับเวลานัดจริงของคุณ ส่วนอื่นของวันขยับตามได้","16:00–17:30 is the clinic appointment as provided — adjust it to your real booking time; the rest of the day can shift around it.","16:00–17:30은 제공된 클리닉 예약 시간입니다. 실제 예약 시간에 맞춰 조정하고, 나머지 일정은 그에 맞춰 옮기세요.")},
+
+ {n:6, d:L("อ. 20 ต.ค.","Tue 20 Oct","10/20 (화)"), t:L("เช็กเอาต์ · กลับบ้าน","Check-out · Home","체크아웃 · 귀국"),
+  note:L("บินออก 17:15 ควรถึงสนามบินอย่างน้อย 14:15 (3 ชม. ก่อนบิน) ช้อปของฝากรอบสุดท้ายก่อนออกจากที่พัก","Your flight leaves at 17:15, so aim to be at the airport by 14:15 (3 hours before). Fit in last-minute souvenir shopping before leaving your stay.","17:15 출발이므로 14:15(3시간 전)까지 공항 도착을 목표로 하고, 숙소를 나서기 전 마지막 기념품 쇼핑을 하세요."),
+  items:[
+   pl("d5-01","10:30–12:15"), pl("d5-02","12:15–12:45"), pl("d5-03","13:00–14:15"), pl("d5-04","14:15–17:15")],
+  tip:L("รับกระเป๋าและเช็กเอาต์ต้องออกภายใน 12:45–13:00 พอดี เผื่อเวลาไว้เล็กน้อยก่อนขึ้น AREX","Bag pickup and check-out must be done by 12:45–13:00 — leave a small buffer before catching AREX.","짐 수령과 체크아웃은 12:45~13:00까지 완료해야 하니, 공항철도 탑승 전 약간의 여유를 두세요.")}
+];
+
+/* ---------- timing checks ---------- */
+var CHECKS = [
+ L("ข้อมูลสถานที่ เวลา ที่อยู่ และลิงก์ Naver Map ทั้งหมดในหน้านี้อ้างอิงจากไฟล์ข้อมูลทริปล่าสุดที่คุณให้มาโดยตรง ไม่ได้สร้างขึ้นเอง","All place, time, address, and Naver Map link data on this page comes directly from the latest trip data file you provided — none of it was invented.","이 페이지의 장소·시간·주소·네이버 지도 링크는 모두 제공해 주신 최신 여행 데이터 파일을 그대로 반영한 것이며 임의로 생성하지 않았습니다."),
+ L("รายการที่มีป้าย \"ยังไม่ยืนยัน\" คือจุดที่ข้อมูลต้นทางระบุว่า verified:false — ควรเช็กชื่อร้าน เวลาเปิด และที่อยู่อีกครั้งก่อนไปจริง","Items tagged \"unverified\" are the ones the source data marked verified:false — double-check the shop name, hours, and address again before you go.","\"미확인\" 표시가 된 항목은 원본 데이터에서 verified:false로 표시된 곳입니다. 방문 전 상호명, 영업시간, 주소를 다시 확인하세요."),
+ L("⚠️ 18 ต.ค. (วัน 4) เป็นวันอาทิตย์ที่ 3 ของเดือน ซึ่งร้านค้าในตลาดเนื้อมาจังหลายแห่งมักปิด — 88 Gold Beef ที่วางไว้มื้อเย็นวันนี้เสี่ยงปิด ควรโทรเช็กล่วงหน้า","⚠️ 18 Oct (Day 4) is the 3rd Sunday of the month, when many Majang meat-market stalls commonly close — 88 Gold Beef, scheduled for dinner that day, is at risk of being closed. Call ahead to confirm.","⚠️ 10/18(4일차)은 매월 셋째 일요일로 마장축산물시장의 많은 매장이 정기휴무일 가능성이 있습니다. 이날 저녁으로 예정된 88골드비프도 휴무 위험이 있으니 미리 전화로 확인하세요."),
+ L("เคียงฮุยกุง (วัน 3, 17 ต.ค.) ปิดทุกวันจันทร์ วันเสาร์นี้เข้าชมได้ตามปกติ","Gyeonghuigung (Day 3, 17 Oct) is closed every Monday; this Saturday it's open as normal.","경희궁(3일차, 10/17)은 매주 월요일 휴관이며, 이 토요일은 정상 개관합니다."),
+ L("คลินิก Iseonu (วัน 5, 16:00–17:30) เป็นเวลาจากข้อมูลต้นทาง ควรตรวจกับใบนัดจริงอีกครั้งก่อนวางแผนรอบนั้น","The Iseonu clinic slot (Day 5, 16:00–17:30) is taken from the source data — confirm it against your actual appointment before finalizing that part of the day.","이선우 클리닉 일정(5일차, 16:00–17:30)은 원본 데이터 기준입니다. 실제 예약서와 다시 대조한 뒤 해당 시간대 계획을 확정하세요."),
+ L("วันสุดท้าย: ถึงสนามบิน 14:15 คือ 3 ชม. ก่อนบิน 17:15 และมีเวลาช้อปฮงแดหลังร้านเปิด ~11:00","Last day: arriving at 14:15 is 3 hours before the 17:15 flight, with time for Hongdae shopping after shops open at about 11:00.","마지막 날: 14:15 공항 도착은 17:15 비행기 3시간 전이며, 오전 11시경 가게 오픈 후 홍대 쇼핑 시간도 있습니다.")
+];
+
+/* ---------- render ---------- */
+var LINES = ["var(--l1)","var(--l2)","var(--l3)","var(--l4)","var(--l5)","var(--l6)"];
+var PIN = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>';
+var CHECKLIST_URL = "seoul-checklist.html";
+var TRAVELERS_URL = "seoul-travelers.html";
+var FLIGHTDETAILS_URL = "seoul-flight-details.html";
+var lang = "th";
+try { var s = localStorage.getItem("seoul-lang"); if (s) lang = s; else { var n = (navigator.language||"th").slice(0,2); if (n==="ko"||n==="en") lang = n; } } catch(e) {}
+var saved = {};
+try { saved = JSON.parse(localStorage.getItem("seoul-visited") || "{}"); } catch(e) {}
+
+function el(tag, cls, text){ var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+function btn(href, text, ghost){ var a = el("a","btn"+(ghost?" ghost":"")); a.href = href; a.target = "_blank"; a.rel = "noopener"; a.innerHTML = PIN; a.appendChild(document.createTextNode(text)); return a; }
+
+function flight(u, out){
+  var p = el("div","pass");
+  var h = el("div","pass-head"); h.appendChild(el("span",null,out?u.outbound:u.inbound)); h.appendChild(el("span",null,out?u.outDate:u.inDate)); p.appendChild(h);
+  function side(code,time,name,right){ var d = el("div", right?"rt":""); d.appendChild(el("div","code",code)); d.appendChild(el("div","time",time)); d.appendChild(el("div","city",name)); return d; }
+  var r = el("div","route-row");
+  r.appendChild(out ? side("BKK","22:45",u.bkk,false) : side("ICN","17:15",u.icn,false));
+  var g = el("div","gap"); g.appendChild(el("div","dash")); g.appendChild(document.createTextNode(out?u.arrNext:u.arrSame)); r.appendChild(g);
+  r.appendChild(out ? side("ICN","06:15",u.icn,true) : side("BKK","21:10",u.bkk,true));
+  p.appendChild(r); p.appendChild(el("div","perf"));
+  var f = el("div","pass-foot"); f.appendChild(el("span","small", out ? u.icnT1 : u.icnTip));
+  f.appendChild(btn(map(out ? "인천국제공항 제1여객터미널" : "인천국제공항 제1여객터미널 출국장"), u.openMap, true));
+  p.appendChild(f);
+  return p;
+}
+
+function render(){
+  var u = UI[lang], app = document.getElementById("app");
+  document.documentElement.lang = lang;
+  document.title = u.title + " 15–20 Oct 2026";
+  app.textContent = "";
+  document.querySelectorAll(".langs button").forEach(function(b){ b.setAttribute("aria-pressed", b.getAttribute("data-l")===lang ? "true":"false"); });
+  var ctb = document.getElementById("checklistTopBtn"); var ctbl = ctb.querySelector(".lbl"); ctbl.textContent = u.checklist;
+  var ttb = document.getElementById("travTopBtn"); var ttbl = ttb.querySelector(".lbl"); ttbl.textContent = u.travelers;
+  var fdb = document.getElementById("fdTopBtn"); var fdbl = fdb.querySelector(".lbl"); fdbl.textContent = u.flightDetails;
+
+  var jump = document.getElementById("jump"); jump.textContent = "";
+  [["flights",u.flights],["stay",u.stay],["plan",u.plan]].forEach(function(x){ var a = el("a","sec",x[1]); a.href = "#"+x[0]; jump.appendChild(a); });
+  DAYS.forEach(function(D,i){ var a = el("a","dn",String(D.n)); a.href = "#day"+D.n; a.style.setProperty("--c",LINES[i]); a.title = D.t[lang]; jump.appendChild(a); });
+
+  var hero = el("header","hero"); var gh = el("div","ghost","서울"); gh.setAttribute("aria-hidden","true"); hero.appendChild(gh);
+  var hw = el("div","wrap"); hero.appendChild(hw);
+  hw.appendChild(el("span","dates","15 – 20 Oct 2026"));
+  hw.appendChild(el("h1",null,u.title));
+  hw.appendChild(el("p",null,u.sub));
+  var ln = el("div","lines"); LINES.forEach(function(c){ var i = el("i"); i.style.setProperty("--c",c); ln.appendChild(i); }); hw.appendChild(ln);
+  var heroLinks = el("div","hero-links-wrap");
+  var heroBtn = el("a","btn hero-btn");
+  heroBtn.href = CHECKLIST_URL; heroBtn.target = "_blank"; heroBtn.rel = "noopener";
+  heroBtn.textContent = ""; heroBtn.title = u.checklist; heroBtn.appendChild(document.createTextNode("🎒 ")); heroBtn.appendChild(el("span","lbl",u.checklist));
+  var heroBtn2 = el("a","btn hero-btn ghost2");
+  heroBtn2.href = TRAVELERS_URL; heroBtn2.target = "_blank"; heroBtn2.rel = "noopener";
+  heroBtn2.textContent = ""; heroBtn2.title = u.travelers; heroBtn2.appendChild(document.createTextNode("👥 ")); heroBtn2.appendChild(el("span","lbl",u.travelers));
+  var heroBtn3 = el("a","btn hero-btn ghost2");
+  heroBtn3.href = FLIGHTDETAILS_URL; heroBtn3.target = "_blank"; heroBtn3.rel = "noopener";
+  heroBtn3.textContent = ""; heroBtn3.title = u.flightDetails; heroBtn3.appendChild(document.createTextNode("✈️ ")); heroBtn3.appendChild(el("span","lbl",u.flightDetails));
+  heroLinks.appendChild(heroBtn); heroLinks.appendChild(heroBtn2); heroLinks.appendChild(heroBtn3);
+  hw.appendChild(heroLinks);
+  app.appendChild(hero);
+
+  var body = el("div","wrap"); app.appendChild(body);
+
+  var fl = el("section","flights"); fl.id = "flights"; fl.appendChild(flight(u,true)); fl.appendChild(flight(u,false)); body.appendChild(fl);
+
+  var h = el("h2","sec",u.stay); h.id = "stay"; body.appendChild(h);
+  var st = el("div","stay");
+  var key = el("div","key"); key.appendChild(el("b",null,"5")); key.appendChild(el("span",null,u.nights)); st.appendChild(key);
+  var info = el("div","info"); info.appendChild(el("h3",null,u.stayName));
+  var dl = el("dl","kv");
+  function row(k,v,link){ dl.appendChild(el("dt",null,k)); var dd = el("dd"); if (link){ var a = el("a",null,v); a.href = link; dd.appendChild(a);} else dd.textContent = v; dl.appendChild(dd); }
+  row(u.ci,"15 Oct 2026"); row(u.co,"20 Oct 2026");
+  row(u.addr,"서울특별시 마포구 대흥로30길 36-12, 04113");
+  row(u.addrEn,"36-12 Daeheung-ro 30-gil, Mapo-gu, Seoul, South Korea 04113");
+  row(u.tel,"+82 10-8889-6025","tel:+821088896025");
+  info.appendChild(dl); info.appendChild(btn(map("서울특별시 마포구 대흥로30길 36-12"), u.openMap, false));
+  info.appendChild(el("div","tipbox",u.stayTip));
+  st.appendChild(info); body.appendChild(st);
+
+  h = el("h2","sec",u.plan); h.id = "plan"; body.appendChild(h);
+  body.appendChild(el("p","sub",u.planSub));
+
+  DAYS.forEach(function(D,i){
+    var day = el("section","day"); day.id = "day"+D.n; day.style.setProperty("--c",LINES[i]);
+    var hd = el("div","day-head");
+    var bd = el("div","badge"); bd.appendChild(el("span",null,u.day)); bd.appendChild(el("b",null,String(D.n))); hd.appendChild(bd);
+    var tt = el("div"); tt.appendChild(el("h3",null,D.t[lang])); tt.appendChild(el("div","small",D.d[lang])); hd.appendChild(tt);
+    day.appendChild(hd);
+    var rt = el("div","route");
+    rt.appendChild(el("p","day-note",D.note[lang]));
+    D.items.forEach(function(it){
+      if (it.t === "ev") {
+        var r = el("div","stn ev"); r.appendChild(el("span","mark"));
+        var tx = el("div","txt"); var top = el("div","top");
+        top.appendChild(el("span","time-chip",it.time)); top.appendChild(el("span","name",it.x[lang]));
+        tx.appendChild(top); r.appendChild(tx); rt.appendChild(r);
+      } else {
+        var pl = P[it.id], r2 = el("label","stn");
+        var cb = el("input"); cb.type = "checkbox"; cb.checked = !!saved[it.id]; cb.setAttribute("aria-label", pl.n[lang]);
+        cb.addEventListener("change", function(){ saved[it.id] = cb.checked; try { localStorage.setItem("seoul-visited", JSON.stringify(saved)); } catch(e){} });
+        r2.appendChild(cb); r2.appendChild(el("span","mark"));
+        var tx2 = el("div","txt"); var top2 = el("div","top");
+        top2.appendChild(el("span","time-chip main",it.time));
+        var nameSpan = el("span","name", (pl.icon ? pl.icon + " " : "") + pl.n[lang]);
+        if (pl.verified === false) { var tag = el("span","utag", u.unverified); nameSpan.appendChild(tag); }
+        top2.appendChild(nameSpan);
+        var mapHref = pl.naver ? pl.naver : map(pl.q);
+        var mapBtnEl = btn(mapHref, u.mapBtn, true);
+        mapBtnEl.addEventListener("click", function(e){ e.stopPropagation(); });
+        top2.appendChild(mapBtnEl);
+        tx2.appendChild(top2);
+        tx2.appendChild(el("p","desc",pl.d[lang]));
+        if (pl.addr) { var ap = el("p","hrs"); ap.appendChild(document.createTextNode("📍 " + pl.addr)); tx2.appendChild(ap); }
+        r2.appendChild(tx2); rt.appendChild(r2);
+      }
+    });
+    if (D.tip) rt.appendChild(el("div","tip",D.tip[lang]));
+    rt.appendChild(el("span","terminus"));
+    day.appendChild(rt); body.appendChild(day);
+  });
+
+  h = el("h2","sec",u.chk); h.id = "check"; body.appendChild(h);
+  body.appendChild(el("p","sub",u.chkSub));
+  var cl = el("ul","checks"); CHECKS.forEach(function(c){ cl.appendChild(el("li",null,c[lang])); }); body.appendChild(cl);
+
+  var nt = el("div","note"); nt.appendChild(el("b",null,u.noteTitle));
+  var ul = el("ul"); u.notes.forEach(function(t){ ul.appendChild(el("li",null,t)); }); nt.appendChild(ul); body.appendChild(nt);
+  body.appendChild(el("footer",null,u.foot));
+}
+
+document.querySelectorAll(".langs button").forEach(function(b){
+  b.addEventListener("click", function(){
+    lang = b.getAttribute("data-l");
+    try { localStorage.setItem("seoul-lang", lang); } catch(e) {}
+    render();
+  });
+});
+
+var navToggle = document.getElementById("navToggle");
+var navDrop = document.getElementById("navDrop");
+function closeNavDrop(){ navDrop.classList.remove("open"); navToggle.setAttribute("aria-expanded","false"); }
+function openNavDrop(){ navDrop.classList.add("open"); navToggle.setAttribute("aria-expanded","true"); }
+navToggle.addEventListener("click", function(e){
+  e.stopPropagation();
+  if (navDrop.classList.contains("open")) closeNavDrop(); else openNavDrop();
+});
+navDrop.addEventListener("click", function(e){ e.stopPropagation(); });
+document.querySelectorAll(".navdrop-item").forEach(function(a){ a.addEventListener("click", closeNavDrop); });
+document.addEventListener("click", closeNavDrop);
+document.addEventListener("keydown", function(e){ if (e.key === "Escape") closeNavDrop(); });
+
+render();
+</script>
+</body>
+</html>

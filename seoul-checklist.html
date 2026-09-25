@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Seoul trip packing checklist">
+<title>Checklist · Seoul 15–20 Oct 2026</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;700&family=Noto+Serif+Thai:wght@700;800&family=Noto+Sans+KR:wght@400;500;700;900&display=swap">
+<style>
+:root{
+  --bg:#f2f5fa; --surface:#ffffff; --ink:#0f1f42; --muted:#5a6784; --line:#d9e1ee;
+  --accent:#0052a4; --accent-ink:#ffffff; --gold:#f3c623; --gold-ink:#2b2200;
+  --l1:#4a5b82; --l2:#00873f; --l3:#d9650a; --l4:#8250a0; --l5:#0052a4; --l6:#c62a3a; --on-line:#ffffff;
+  --hero-a:#0f1f42; --hero-b:#173a78; --hero-ink:#ffffff;
+  box-sizing:border-box;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0b1326; --surface:#16213b; --ink:#eaf0fa; --muted:#9bacc8; --line:#2a3959;
+    --accent:#6fb0ff; --accent-ink:#06213f; --gold:#f3c623; --gold-ink:#2b2200;
+    --l1:#93a6d2; --l2:#3ecf7f; --l3:#ff9a45; --l4:#c9a0e6; --l5:#66a8ff; --l6:#ff7a88; --on-line:#0b1326;
+    --hero-a:#101c3a; --hero-b:#1a3468;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0b1326; --surface:#16213b; --ink:#eaf0fa; --muted:#9bacc8; --line:#2a3959;
+  --accent:#6fb0ff; --accent-ink:#06213f; --gold:#f3c623; --gold-ink:#2b2200;
+  --l1:#93a6d2; --l2:#3ecf7f; --l3:#ff9a45; --l4:#c9a0e6; --l5:#66a8ff; --l6:#ff7a88; --on-line:#0b1326;
+  --hero-a:#101c3a; --hero-b:#1a3468;
+}
+html{scroll-padding-top:76px;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+*{box-sizing:border-box}
+html,body{overflow-x:hidden}
+body{overflow-wrap:break-word;word-break:break-word}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans Thai","Noto Sans KR",system-ui,sans-serif;line-height:1.65;font-size:16px;max-width:440px;width:100%;margin-left:auto;margin-right:auto;padding-bottom:env(safe-area-inset-bottom,0px)}
+html[lang="en"] body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+h1,h2,h3{font-family:"Noto Serif Thai","Noto Sans KR",Georgia,serif;margin:0;line-height:1.25}
+html[lang="en"] h1,html[lang="en"] h2,html[lang="en"] h3{font-family:Georgia,"Times New Roman",serif}
+html[lang="ko"] h1,html[lang="ko"] h2,html[lang="ko"] h3{font-family:"Noto Sans KR",sans-serif;font-weight:900}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.wrap{width:100%;padding:0 14px}
+
+.bar{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:8px;padding-bottom:8px;flex-wrap:wrap}
+.langs{display:flex;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:3px}
+.langs button{font:inherit;font-size:.9rem;font-weight:700;padding:4px 12px;border-radius:999px;border:0;background:transparent;color:var(--muted);cursor:pointer}
+.langs button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.navmenu{position:relative;flex:none}
+.navdrop{position:absolute;top:calc(100% + 8px);right:0;background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:0 12px 32px rgba(9,20,50,.2);padding:6px;display:flex;flex-direction:column;gap:2px;min-width:210px;z-index:50;opacity:0;pointer-events:none;transform:translateY(-6px);transition:opacity .15s ease, transform .15s ease}
+.navdrop.open{opacity:1;pointer-events:auto;transform:translateY(0)}
+.navdrop-item{display:flex;align-items:center;gap:10px;padding:11px 12px;border-radius:10px;text-decoration:none;color:var(--ink);font-weight:600;font-size:.95rem}
+.navdrop-item:hover,.navdrop-item:focus-visible{background:var(--bg)}
+.navdrop-item .ic{font-size:1.15rem;flex:none}
+.lbl{display:inline}
+
+.btn{display:inline-flex;align-items:center;gap:6px;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:700;padding:7px 14px;border-radius:999px;font-size:.9rem;white-space:nowrap;border:1.5px solid var(--accent)}
+.btn.ghost{background:transparent;color:var(--accent)}
+.btn svg{width:15px;height:15px;flex:none}
+
+.hero{background:linear-gradient(160deg,var(--hero-a),var(--hero-b));color:var(--hero-ink);position:relative;overflow:hidden}
+.hero .wrap{padding-top:36px;padding-bottom:40px;position:relative}
+.hero .ghost-kr{position:absolute;right:-6px;top:-8px;font-family:"Noto Sans KR",sans-serif;font-weight:900;font-size:6.5rem;line-height:1;color:rgba(255,255,255,.07);pointer-events:none;user-select:none}
+.eyebrow{display:inline-flex;gap:8px;align-items:center;background:var(--gold);color:var(--gold-ink);font-weight:700;padding:4px 14px;border-radius:999px;font-size:.92rem}
+.hero h1{font-size:2.3rem;font-weight:800;margin:16px 0 8px;letter-spacing:-.01em}
+.hero p{margin:0;max-width:42ch;opacity:.85;font-size:1.02rem}
+.progress-wrap{margin-top:22px;max-width:420px}
+.progress-bar{height:10px;border-radius:999px;background:rgba(255,255,255,.18);overflow:hidden}
+.progress-fill{height:100%;background:var(--gold);width:0%;transition:width .25s ease}
+.progress-label{margin-top:6px;font-size:.88rem;opacity:.85}
+
+h2.sec{font-size:1.4rem;margin:38px 0 4px}
+.sub{color:var(--muted);margin:-2px 0 18px;max-width:60ch}
+
+.cat{margin:0 0 30px}
+.cat-head{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.cat-ico{flex:none;width:44px;height:44px;border-radius:12px;background:var(--c);color:var(--on-line);display:flex;align-items:center;justify-content:center;font-size:1.3rem}
+.cat-head h3{font-size:1.15rem}
+.cat-count{color:var(--muted);font-size:.88rem}
+.items{background:var(--surface);border-radius:14px;box-shadow:0 4px 18px rgba(9,20,50,.06);overflow:hidden}
+.item{display:flex;align-items:flex-start;gap:12px;padding:12px 14px;border-bottom:1px solid var(--line)}
+.item:last-child{border-bottom:0}
+.item input{width:26px;height:26px;margin:1px 0 0;flex:none;accent-color:var(--c);cursor:pointer}
+.item .txt{flex:1;min-width:0}
+.item .name{font-weight:600;font-size:1rem;overflow-wrap:anywhere}
+.item input:checked ~ .txt .name{color:var(--muted);text-decoration:line-through}
+.item .note{margin:2px 0 0;color:var(--muted);font-size:.88rem;line-height:1.5}
+.item.opt .name::after{content:" *";color:var(--muted);font-weight:400}
+
+.tips{background:var(--surface);border-radius:14px;padding:16px 18px;margin:8px 0 8px}
+.tips h3{font-size:1.1rem;margin-bottom:8px}
+.tips ul{margin:0;padding-left:20px;color:var(--ink);font-size:.95rem}
+.tips li{margin:0 0 8px}
+
+.resetrow{display:flex;justify-content:flex-end;margin:6px 0 0}
+.resetbtn{background:transparent;border:1px solid var(--line);color:var(--muted);font:inherit;font-size:.85rem;padding:5px 12px;border-radius:999px;cursor:pointer}
+
+.navmenu .btn{min-width:44px;min-height:44px}
+.navdrop-item{min-height:44px}
+
+@media (max-width:380px){
+  .wrap{padding:0 12px}
+  .hero h1{font-size:1.85rem}
+  .hero .ghost-kr{font-size:4.6rem}
+  .cat-ico{width:38px;height:38px;font-size:1.1rem}
+}
+@media (max-width:340px){
+  .hero h1{font-size:1.65rem}
+  .btn{font-size:.82rem;padding:6px 11px}
+}
+.resetbtn{min-height:40px}
+footer{margin:32px 0 48px;color:var(--muted);font-size:.85rem;padding-bottom:env(safe-area-inset-bottom,0px)}
+</style>
+</head>
+<body>
+<div class="bar"><div class="wrap">
+  <div class="langs" role="group" aria-label="Language">
+    <button data-l="th">ไทย</button><button data-l="en">EN</button><button data-l="ko">한국어</button>
+  </div>
+  <div class="navmenu">
+    <button class="btn ghost" id="navToggle" aria-haspopup="true" aria-expanded="false" aria-label="More pages" type="button">🔗</button>
+    <div class="navdrop" id="navDrop" role="menu">
+      <a class="navdrop-item" id="backlink" href="#" target="_blank" rel="noopener" role="menuitem"><span class="ic">🍁</span><span class="lbl">Trip</span></a>
+      <a class="navdrop-item" id="travTopBtn" href="#" target="_blank" rel="noopener" role="menuitem"><span class="ic">👥</span><span class="lbl">Travelers</span></a>
+      <a class="navdrop-item" id="fdTopBtn" href="#" target="_blank" rel="noopener" role="menuitem"><span class="ic">✈️</span><span class="lbl">Flight</span></a>
+    </div>
+  </div>
+</div></div>
+<div id="app"></div>
+
+<script>
+function L(th,en,ko){ return {th:th,en:en,ko:ko}; }
+var TRIP_URL = "index.html";
+var TRAVELERS_URL = "seoul-travelers.html";
+var FLIGHTDETAILS_URL = "seoul-flight-details.html";
+
+var UI = {
+ th:{ title:"เช็กลิสต์เตรียมตัว", sub:"สิ่งที่ควรเตรียมก่อนไปโซล 15–20 ต.ค. 2026 ติ๊กเมื่อจัดแล้ว ระบบจำให้อัตโนมัติ",
+  back:"กลับไปหน้าแผนเที่ยว", travBtn:"สมาชิกผู้เดินทาง", fdBtn:"รายละเอียดเที่ยวบิน", progress:"จัดแล้ว", reset:"ล้างรายการที่ติ๊กไว้", starNote:"* ไม่จำเป็น แต่แนะนำ",
+  tipsTitle:"เคล็ดลับก่อนเดินทาง" },
+ en:{ title:"Packing checklist", sub:"What to prepare before Seoul, 15–20 Oct 2026. Tick items as you pack them; your progress is saved automatically.",
+  back:"Back to trip plan", travBtn:"Travelers", fdBtn:"Flight details", progress:"packed", reset:"Clear all ticks", starNote:"* Optional, but recommended",
+  tipsTitle:"Tips before you go" },
+ ko:{ title:"준비물 체크리스트", sub:"2026년 10월 15~20일 서울 여행 전 준비물입니다. 챙긴 항목을 체크하면 자동으로 저장됩니다.",
+  back:"여행 일정으로 돌아가기", travBtn:"여행 인원", fdBtn:"항공편 상세정보", progress:"완료", reset:"체크 초기화", starNote:"* 선택 사항이지만 추천",
+  tipsTitle:"출발 전 팁" }
+};
+
+var CATS = [
+ {id:"docs", ico:"🛂", c:"var(--l1)", name:L("เอกสารและการเงิน","Documents & money","서류·금융"),
+  items:[
+   {id:"passport", req:1, n:L("พาสปอร์ต (อายุเหลือ 6 เดือนขึ้นไป)","Passport (valid 6+ months)","여권 (유효기간 6개월 이상)")},
+   {id:"passcopy", req:0, n:L("ถ่ายรูป/สำเนาพาสปอร์ตเก็บแยกไว้","Photo/copy of passport kept separately","여권 사본 별도 보관")},
+   {id:"eticket", req:1, n:L("ตั๋วเครื่องบิน (ไฟล์หรือปริ้น)","Flight e-ticket (digital or printed)","항공권 (전자 또는 출력)")},
+   {id:"hotelconf", req:1, n:L("ใบยืนยันที่พัก STAY ROCK","STAY ROCK booking confirmation","숙소(스테이락) 예약 확인서")},
+   {id:"ketaform", req:0, n:L("K-ETA (ถ้ายังไม่ได้รับการยกเว้น) กรอกล่วงหน้า","K-ETA, if not visa-exempt — apply in advance","K-ETA (면제 대상 아니면 사전 신청)")},
+   {id:"insurance", req:0, n:L("ประกันการเดินทาง + เบอร์ติดต่อฉุกเฉิน","Travel insurance + emergency contact number","여행자 보험 + 긴급 연락처")},
+   {id:"krw", req:1, n:L("เงินวอนสดสำหรับตลาด/ร้านเล็ก","Korean won cash for markets and small shops","시장·소규모 매장용 원화 현금")},
+   {id:"card", req:1, n:L("บัตรเดบิต/เครดิตที่ใช้ต่างประเทศได้ แจ้งธนาคารก่อนบิน","Debit/credit card that works abroad — notify your bank before flying","해외 사용 가능한 카드, 출국 전 은행에 알리기")}
+  ]},
+ {id:"electronics", ico:"🔌", c:"var(--l5)", name:L("อุปกรณ์อิเล็กทรอนิกส์","Electronics","전자기기"),
+  items:[
+   {id:"plug", req:1, n:L("ปลั๊กแปลง Type C/F (เกาหลีใช้ปลั๊กกลม 220V)","Type C/F travel adapter (Korea uses round 220V plugs)","돼지코 C/F 타입 어댑터 (한국은 220V 원형 콘센트)")},
+   {id:"powerbank", req:0, n:L("พาวเวอร์แบงก์ (พกใต้เครื่องบินเท่านั้น ห้ามโหลดใต้ท้อง)","Power bank (carry-on only, not in checked luggage)","보조배터리 (기내 반입만 가능, 위탁 금지)")},
+   {id:"cable", req:1, n:L("สายชาร์จ/หัวชาร์จให้ครบทุกอุปกรณ์","Charging cables/blocks for every device","기기별 충전 케이블·어댑터")},
+   {id:"sim", req:0, n:L("eSIM หรือซิมเกาหลี/พ็อกเก็ตไวไฟ จองล่วงหน้า","eSIM, Korean SIM, or pocket wifi — book ahead","eSIM 또는 한국 유심/포켓와이파이 사전 예약")},
+   {id:"camera", req:0, n:L("กล้อง/เมมโมรี่การ์ดสำรอง","Camera + spare memory card","카메라·여분 메모리카드")},
+   {id:"headphone", req:0, n:L("หูฟังสำหรับเครื่องบิน","Headphones for the flight","비행기용 이어폰/헤드폰")}
+  ]},
+ {id:"clothes", ico:"🧥", c:"var(--l3)", name:L("เสื้อผ้า (อากาศ ต.ค. ราว 10–20°C)","Clothing (Oct weather, roughly 10–20°C)","의류 (10월 평균 10~20°C)"),
+  items:[
+   {id:"jacket", req:1, n:L("แจ็กเก็ตกันลมหรือเสื้อคลุมบาง ๆ ใส่ตอนเช้า-ค่ำ","Windbreaker or light jacket for mornings and evenings","아침·저녁용 바람막이 또는 가벼운 자켓")},
+   {id:"layer", req:1, n:L("เสื้อแขนยาวใส่ซ้อนได้หลายชั้น","Layerable long-sleeve tops","겹쳐 입을 수 있는 긴팔 상의")},
+   {id:"walkshoes", req:1, n:L("รองเท้าผ้าใบที่เดินสบาย เดินเยอะทุกวัน","Comfortable walking shoes — expect a lot of walking daily","매일 많이 걷는 만큼 편한 운동화")},
+   {id:"socks", req:0, n:L("ถุงเท้าสำรองหลายคู่","Extra pairs of socks","여분 양말 여러 켤레")},
+   {id:"sleepwear", req:0, n:L("ชุดนอน","Sleepwear","잠옷")},
+   {id:"umbrella", req:0, n:L("ร่มพับหรือเสื้อกันฝนเผื่อฝนตก","Compact umbrella or rain jacket in case of rain","우산 또는 우비 (우천 대비)")}
+  ]},
+ {id:"health", ico:"💊", c:"var(--l2)", name:L("สุขภาพและของใช้ส่วนตัว","Health & toiletries","건강·세면용품"),
+  items:[
+   {id:"meds", req:1, n:L("ยาประจำตัว (พกใบสั่งยาถ้าเป็นยาควบคุม)","Personal medication (bring prescription if controlled)","개인 상비약 (처방약은 처방전 지참)")},
+   {id:"basicmeds", req:0, n:L("ยาสามัญ: แก้ปวด แก้แพ้ ยาแก้ท้องเสีย พลาสเตอร์","Basic meds: painkillers, antihistamine, anti-diarrheal, plasters","상비약: 진통제, 항히스타민제, 지사제, 밴드")},
+   {id:"toiletries", req:0, n:L("ชุดอาบน้ำขนาดพกพา (ที่พักอาจไม่มีครบ)","Travel-size toiletries (your stay may not provide everything)","여행용 세면도구 (숙소에 다 없을 수 있음)")},
+   {id:"sunscreen", req:0, n:L("ครีมกันแดด","Sunscreen","선크림")},
+   {id:"masks", req:0, n:L("หน้ากากอนามัยสำรอง","Spare face masks","여분 마스크")}
+  ]},
+ {id:"misc", ico:"🎒", c:"var(--l4)", name:L("อื่น ๆ ที่ควรมี","Good to have","기타 준비물"),
+  items:[
+   {id:"daypack", req:1, n:L("กระเป๋าสะพายใบเล็กสำหรับเดินเที่ยวรายวัน","Small daypack for daily outings","일일 외출용 작은 가방")},
+   {id:"waterbottle", req:0, n:L("ขวดน้ำพกพา","Reusable water bottle","휴대용 물병")},
+   {id:"appsnaver", req:1, n:L("ติดตั้งแอป Naver Map / Papago ไว้ล่วงหน้า","Install Naver Map / Papago apps in advance","네이버 지도·파파고 앱 미리 설치")},
+   {id:"tmoney", req:0, n:L("บัตร T-money สำหรับรถไฟใต้ดิน/รถเมล์ (ซื้อที่สนามบินหรือร้านสะดวกซื้อ)","T-money card for subway/bus (buy at the airport or a convenience store)","지하철·버스용 티머니 카드 (공항·편의점에서 구매)")},
+   {id:"foldbag", req:0, n:L("ถุงผ้าพับได้สำหรับใส่ของที่ซื้อ","Foldable tote for shopping","쇼핑용 접이식 에코백")},
+   {id:"snacks", req:0, n:L("ขนมหรืออาหารว่างสำหรับบนเครื่อง","Snacks for the flight","기내용 간식")}
+  ]}
+];
+
+var TIPS = [
+ L("อากาศเดือน ต.ค. เปลี่ยนเร็วช่วงเช้า-เย็น ใส่เสื้อซ้อนได้จะสะดวกกว่าเสื้อหนาชิ้นเดียว","October temperatures swing between morning and evening, so layers work better than one heavy coat.","10월은 아침·저녁 기온차가 커서 두꺼운 옷 한 벌보다 겹쳐 입는 것이 편합니다."),
+ L("พาวเวอร์แบงก์ต้องพกขึ้นเครื่องเท่านั้น ห้ามใส่กระเป๋าโหลดใต้ท้องเครื่อง","Power banks must go in carry-on luggage only — airlines do not allow them in checked bags.","보조배터리는 반드시 기내 수하물로만 반입 가능하며 위탁 수하물에는 넣을 수 없습니다."),
+ L("ร้านค้าเล็กและตลาดหลายแห่งรับเงินสดสะดวกกว่าบัตร ควรแลกเงินวอนบางส่วนไว้ก่อน","Small shops and markets are often easier with cash than card, so exchange some won in advance.","소규모 상점과 시장은 카드보다 현금이 편한 경우가 많아 원화를 미리 환전해 두세요."),
+ L("โหลดแอป Naver Map และ Papago ไว้ก่อนเดินทาง เพราะ Google Maps ใช้นำทางเดินเท้า/รถไฟใต้ดินในเกาหลีได้ไม่ดีนัก","Download Naver Map and Papago before you go — Google Maps is not reliable for walking or subway directions in Korea.","한국에서는 구글맵의 도보·지하철 길찾기가 부정확한 경우가 많으니 출발 전 네이버 지도와 파파고를 설치하세요.")
+];
+
+function el(tag, cls, text){ var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+
+var lang = "th";
+try { var s = localStorage.getItem("seoul-lang"); if (s) lang = s; else { var n = (navigator.language||"th").slice(0,2); if (n==="ko"||n==="en") lang = n; } } catch(e) {}
+var checked = {};
+try { checked = JSON.parse(localStorage.getItem("seoul-checklist") || "{}"); } catch(e) {}
+
+function saveChecked(){ try { localStorage.setItem("seoul-checklist", JSON.stringify(checked)); } catch(e) {} }
+
+function totalCount(){ var t=0; CATS.forEach(function(c){ t += c.items.length; }); return t; }
+function doneCount(){ var d=0; CATS.forEach(function(c){ c.items.forEach(function(it){ if (checked[it.id]) d++; }); }); return d; }
+
+function render(){
+  var u = UI[lang], app = document.getElementById("app");
+  document.documentElement.lang = lang;
+  document.title = u.title + " · Seoul";
+  app.textContent = "";
+  document.querySelectorAll(".langs button").forEach(function(b){ b.setAttribute("aria-pressed", b.getAttribute("data-l")===lang ? "true":"false"); });
+  var back = document.getElementById("backlink"); back.href = TRIP_URL; back.querySelector(".lbl").textContent = u.back;
+  var trb = document.getElementById("travTopBtn"); trb.href = TRAVELERS_URL; trb.querySelector(".lbl").textContent = u.travBtn;
+  var fdb = document.getElementById("fdTopBtn"); fdb.href = FLIGHTDETAILS_URL; fdb.querySelector(".lbl").textContent = u.fdBtn;
+
+  var hero = el("header","hero"); var gh = el("div","ghost-kr","짐"); gh.setAttribute("aria-hidden","true"); hero.appendChild(gh);
+  var hw = el("div","wrap"); hero.appendChild(hw);
+  hw.appendChild(el("span","eyebrow","✓ Seoul · 15–20 Oct 2026"));
+  hw.appendChild(el("h1",null,u.title));
+  hw.appendChild(el("p",null,u.sub));
+  var pw = el("div","progress-wrap");
+  var pb = el("div","progress-bar"); var pf = el("div","progress-fill"); pb.appendChild(pf); pw.appendChild(pb);
+  var plabel = el("div","progress-label"); pw.appendChild(plabel);
+  hw.appendChild(pw);
+  app.appendChild(hero);
+
+  function updateProgress(){
+    var tot = totalCount(), done = doneCount();
+    var pct = tot ? Math.round(done/tot*100) : 0;
+    pf.style.width = pct + "%";
+    plabel.textContent = done + "/" + tot + " " + u.progress + " (" + pct + "%)";
+  }
+
+  var body = el("div","wrap"); app.appendChild(body);
+
+  CATS.forEach(function(cat){
+    var sec = el("section","cat");
+    var head = el("div","cat-head");
+    var ico = el("div","cat-ico",cat.ico); ico.style.setProperty("--c",cat.c); head.appendChild(ico);
+    var tt = el("div"); tt.appendChild(el("h3",null,cat.name[lang]));
+    var cnt = el("div","cat-count"); tt.appendChild(cnt); head.appendChild(tt);
+    sec.appendChild(head);
+    var box = el("div","items");
+    cat.items.forEach(function(it){
+      var row = el("label","item" + (it.req?"":" opt"));
+      var cb = el("input"); cb.type="checkbox"; cb.checked = !!checked[it.id];
+      cb.addEventListener("change", function(){ checked[it.id] = cb.checked; saveChecked(); updateProgress(); updateCount(); });
+      row.appendChild(cb);
+      var tx = el("div","txt"); tx.appendChild(el("div","name",it.n[lang]));
+      row.appendChild(tx); box.appendChild(row);
+    });
+    sec.appendChild(box);
+    function updateCount(){
+      var d = cat.items.filter(function(it){ return checked[it.id]; }).length;
+      cnt.textContent = d + "/" + cat.items.length;
+    }
+    updateCount();
+    body.appendChild(sec);
+  });
+
+  body.appendChild(el("p","sub",u.starNote));
+
+  var rr = el("div","resetrow");
+  var rb = el("button","resetbtn",u.reset);
+  rb.addEventListener("click", function(){ checked = {}; saveChecked(); render(); });
+  rr.appendChild(rb); body.appendChild(rr);
+
+  var tp = el("div","tips"); tp.appendChild(el("h3",null,u.tipsTitle));
+  var tul = el("ul"); TIPS.forEach(function(t){ tul.appendChild(el("li",null,t[lang])); }); tp.appendChild(tul);
+  body.appendChild(tp);
+
+  var bb = document.createElement("a"); bb.className="btn"; bb.href = TRIP_URL; bb.textContent = ""; bb.title = u.back; bb.appendChild(document.createTextNode("← ")); bb.appendChild(el("span","lbl",u.back));
+  body.appendChild(bb);
+
+  body.appendChild(el("footer",null,""));
+  updateProgress();
+}
+
+document.querySelectorAll(".langs button").forEach(function(b){
+  b.addEventListener("click", function(){
+    lang = b.getAttribute("data-l");
+    try { localStorage.setItem("seoul-lang", lang); } catch(e) {}
+    render();
+  });
+});
+
+var navToggle = document.getElementById("navToggle");
+var navDrop = document.getElementById("navDrop");
+function closeNavDrop(){ navDrop.classList.remove("open"); navToggle.setAttribute("aria-expanded","false"); }
+function openNavDrop(){ navDrop.classList.add("open"); navToggle.setAttribute("aria-expanded","true"); }
+navToggle.addEventListener("click", function(e){
+  e.stopPropagation();
+  if (navDrop.classList.contains("open")) closeNavDrop(); else openNavDrop();
+});
+navDrop.addEventListener("click", function(e){ e.stopPropagation(); });
+document.querySelectorAll(".navdrop-item").forEach(function(a){ a.addEventListener("click", closeNavDrop); });
+document.addEventListener("click", closeNavDrop);
+document.addEventListener("keydown", function(e){ if (e.key === "Escape") closeNavDrop(); });
+
+render();
+</script>
+</body>
+</html>
